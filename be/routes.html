@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="be">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Маршрут памяці — Спадчына</title>
+<meta name="description" content="Саберыце асабісты маршрут па месцах памяці і культурнай спадчыне Беларусі. Захаванне ў браўзеры, адлегласць і спасылкі на карты.">
+<meta name="theme-color" content="#f4f0e6">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Маршрут памяці — Спадчына">
+<meta property="og:description" content="Саберыце асабісты маршрут па месцах памяці і культурнай спадчыне Беларусі. Захаванне ў браўзеры, адлегласць і спасылкі на карты.">
+<meta property="og:image" content="../assets/img/curated/khatyn-hero.jpg">
+<link rel="icon" href="../assets/img/favicon.svg" type="image/svg+xml">
+<link rel="preload" href="../assets/fonts/Literata-normal-cyrillic.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="../assets/fonts/GolosText-normal-cyrillic.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="../assets/css/site.css">
+<link rel="stylesheet" href="../vendor/leaflet/leaflet.css">
+</head>
+<body data-base="./" data-assets="../" data-page="routes" class="">
+<a class="skip-link" href="#main">Перайсці да змесціва</a>
+
+<header class="site-header">
+  <div class="container site-header__inner">
+    <a class="brand" href="./index.html" aria-label="Спадчына — на галоўную">
+      <span class="brand__mark"><img src="../assets/img/logo.svg" alt=""></span>
+      <span class="brand__text"><span class="brand__name">Спадчына</span><span class="brand__sub">Месцы памяці Беларусі</span></span>
+    </a>
+    <nav class="site-nav" id="site-menu" data-menu aria-label="Асноўная навігацыя"><a href="./map.html" data-nav="map">Карта</a><a href="./stories.html" data-nav="stories">Месцы</a><a href="./places.html" data-nav="places">Каталог</a><a href="./walks.html" data-nav="walks">Прагулкі</a><a href="./about.html" data-nav="about">Пра праект</a></nav>
+    <div class="header-tools">
+      <div class="lang-switch" aria-label="Мова"><a href="../routes.html" data-lang-link hreflang="ru" lang="ru">RU</a><a href="routes.html" data-lang-link hreflang="be" lang="be" class="is-active" aria-current="page">BE</a><a href="../en/routes.html" data-lang-link hreflang="en" lang="en">EN</a></div>
+      <a class="route-pill" href="./routes.html" aria-label="Маршрут"><span>Маршрут</span> <strong data-route-count>0</strong></a>
+      <button class="menu-toggle" type="button" data-menu-toggle aria-expanded="false" aria-controls="site-menu" aria-label="Адкрыць меню"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+<main id="main">
+
+<section class="route-page">
+  <div class="container">
+    <div class="route-head"><div><div class="kicker">Асабісты маршрут</div><h1>Маршрут<br>памяці.</h1></div><p>Дадавайце месцы з каталога і гісторый, мяняйце парадак, глядзіце адлегласць па прамой і адкрывайце маршрут у знешніх картах.</p></div>
+    <div class="route-layout">
+      <div class="route-map-wrap">
+        <div id="route-map" role="application" aria-label="Карта маршрута"></div>
+        <div class="map-tools" aria-label="Карта маршрута">
+          <button type="button" data-map-tool="fit">Увесь маршрут</button>
+          <button type="button" data-map-tool="locate">Маё месца</button>
+          <button type="button" data-map-tool="zoom-in" aria-label="Наблізіць">+</button>
+          <button type="button" data-map-tool="zoom-out" aria-label="Аддаліць">−</button>
+        </div>
+      </div>
+      <aside class="route-side">
+        <div class="route-search">
+          <label for="route-search-input">Дадаць месца</label>
+          <input id="route-search-input" type="search" placeholder="Пачніце ўводзіць назву…" autocomplete="off">
+          <div class="route-results" id="route-results"></div>
+        </div>
+        <div class="route-empty" id="route-empty"><strong>Маршрут пакуль пусты.</strong><br>Знайдзіце месца ў пошуку вышэй або дадайце яго з карткі аб’екта.</div>
+        <div class="route-list" id="route-list"></div>
+        <div class="route-summary" id="route-summary" hidden>
+          <div class="route-summary__row"><span>Кропак</span><strong id="route-points">0</strong></div>
+          <div class="route-summary__row"><span>Адлегласць па прамой</span><strong id="route-distance">0 км</strong></div>
+          <div class="route-summary__note">Гэта арыенціровачная адлегласць паміж кропкамі, а не дарожны маршрут. Знешнія сэрвісы пабудуюць аўтамабільны маршрут самастойна.</div>
+        </div>
+        <div class="route-links" id="route-links" hidden>
+          <a class="btn btn--primary" id="route-google" href="#" target="_blank" rel="noopener">Google Maps</a>
+          <a class="btn btn--ghost" id="route-yandex" href="#" target="_blank" rel="noopener">Яндекс Карты</a>
+          <a class="btn btn--ghost" id="route-osm" href="#" target="_blank" rel="noopener">OpenStreetMap</a>
+          <button class="btn btn--ghost" type="button" id="route-clear">Ачысціць</button>
+        </div>
+        <p class="route-help">Маршрут захоўваецца толькі ў гэтым браўзеры (localStorage). Стрэлкі мяняюць парадак кропак, × выдаляе кропку. Знешнія карты могуць абмяжоўваць колькасць прамежкавых кропак; пры неабходнасці разбіце маршрут на часткі.</p>
+      </aside>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a class="brand" href="./index.html" aria-label="Спадчына — на галоўную">
+          <span class="brand__mark"><img src="../assets/img/logo.svg" alt=""></span>
+          <span class="brand__text"><span class="brand__name">Спадчына</span><span class="brand__sub">Месцы памяці Беларусі</span></span>
+        </a>
+        <p class="footer-note">Гід па месцах памяці і культурнай спадчыне Беларусі. Адукацыйны некамерцыйны праект.</p>
+      </div>
+      <div>
+        <h2 class="footer-title">Навігацыя</h2>
+        <div class="footer-links">
+          <a href="./map.html">Карта</a>
+          <a href="./stories.html">Месцы і помнікі</a>
+          <a href="./places.html">Афіцыйны каталог</a>
+          <a href="./walks.html">Прагулкі</a>
+          <a href="./routes.html">Мой маршрут</a>
+        </div>
+      </div>
+      <div>
+        <h2 class="footer-title">Даныя</h2>
+        <div class="footer-links">
+          <a href="https://heritage.gov.by/catalog" target="_blank" rel="noopener">Дзяржаўны спіс</a>
+          <a href="https://gosspisok.gov.by/" target="_blank" rel="noopener">Дзяржспіс</a>
+          <a href="https://president.gov.by/ru" target="_blank" rel="noopener">Афіцыйны партал</a>
+          <a href="./sources.html">Крыніцы і крэдыты</a>
+        </div>
+      </div>
+      <div>
+        <h2 class="footer-title">Пра праект</h2>
+        <p class="footer-note" style="margin-top:0">Адукацыйны некамерцыйны праект. Не з’яўляецца афіцыйным сайтам дзяржаўных органаў. Усе факты — са спасылкамі на афіцыйныя крыніцы.</p>
+        <p class="footer-note"><a href="./about.html">Пра праект</a> · <a href="./sources.html">Методыка</a></p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 «Спадчына».</span>
+      <span>Зроблена з павагай да крыніц і памяці.</span>
+    </div>
+  </div>
+</footer>
+<script defer src="../vendor/leaflet/leaflet.js"></script>
+<script defer src="../assets/js/common.js"></script>
+<script defer src="../assets/js/routes.js"></script>
+
+</body>
+</html>

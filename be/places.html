@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="be">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Афіцыйны каталог — Спадчына</title>
+<meta name="description" content="Каталог аб’ектаў Дзяржаўнага спісу гісторыка-культурных каштоўнасцей Беларусі: пошук па назве, вобласці і тыпе, карта і маршрут.">
+<meta name="theme-color" content="#f4f0e6">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Афіцыйны каталог — Спадчына">
+<meta property="og:description" content="Каталог аб’ектаў Дзяржаўнага спісу гісторыка-культурных каштоўнасцей Беларусі: пошук па назве, вобласці і тыпе, карта і маршрут.">
+<meta property="og:image" content="../assets/img/curated/khatyn-hero.jpg">
+<link rel="icon" href="../assets/img/favicon.svg" type="image/svg+xml">
+<link rel="preload" href="../assets/fonts/Literata-normal-cyrillic.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="../assets/fonts/GolosText-normal-cyrillic.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="../assets/css/site.css">
+
+</head>
+<body data-base="./" data-assets="../" data-page="places" class="">
+<a class="skip-link" href="#main">Перайсці да змесціва</a>
+
+<header class="site-header">
+  <div class="container site-header__inner">
+    <a class="brand" href="./index.html" aria-label="Спадчына — на галоўную">
+      <span class="brand__mark"><img src="../assets/img/logo.svg" alt=""></span>
+      <span class="brand__text"><span class="brand__name">Спадчына</span><span class="brand__sub">Месцы памяці Беларусі</span></span>
+    </a>
+    <nav class="site-nav" id="site-menu" data-menu aria-label="Асноўная навігацыя"><a href="./map.html" data-nav="map">Карта</a><a href="./stories.html" data-nav="stories">Месцы</a><a href="./places.html" data-nav="places" class="is-active">Каталог</a><a href="./walks.html" data-nav="walks">Прагулкі</a><a href="./about.html" data-nav="about">Пра праект</a></nav>
+    <div class="header-tools">
+      <div class="lang-switch" aria-label="Мова"><a href="../places.html" data-lang-link hreflang="ru" lang="ru">RU</a><a href="places.html" data-lang-link hreflang="be" lang="be" class="is-active" aria-current="page">BE</a><a href="../en/places.html" data-lang-link hreflang="en" lang="en">EN</a></div>
+      <a class="route-pill" href="./routes.html" aria-label="Маршрут"><span>Маршрут</span> <strong data-route-count>0</strong></a>
+      <button class="menu-toggle" type="button" data-menu-toggle aria-expanded="false" aria-controls="site-menu" aria-label="Адкрыць меню"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+<main id="main">
+
+<section class="page-hero">
+  <div class="container">
+    <div class="page-hero__grid">
+      <div><div class="kicker">Дзяржаўны спіс</div><h1>Афіцыйны<br>каталог.</h1></div>
+      <p>7 678 аб’ектаў гісторыка-культурнай спадчыны Беларусі. Шукайце па назве, вобласці і тыпе; адкрывайце карткі і дадавайце месцы ў маршрут.</p>
+    </div>
+    <div class="page-hero__meta"><span><strong data-stat="total">7 678</strong> аб’ектаў</span><span><strong data-stat="coords">4 933</strong> з каардынатамі</span><span><strong>7</strong> абласцей</span><span>Даныя heritage.gov.by</span></div>
+  </div>
+</section>
+<section class="section section--tight">
+  <div class="container">
+    <div class="filter-bar" role="search" aria-label="Пошук">
+      <div class="filter-field filter-field--search"><label for="filter-q">Пошук</label><input id="filter-q" type="search" placeholder="Назва, адрас, тып…" autocomplete="off"></div>
+      <div class="filter-field"><label for="filter-region">Вобласць</label><select id="filter-region"></select></div>
+      <div class="filter-field"><label for="filter-group">Тып</label><select id="filter-group"></select></div>
+      <label class="checkline"><input id="filter-curated" type="checkbox"> Толькі гісторыі</label>
+      <div class="filter-actions"><button class="btn btn--ghost btn--small" type="button" id="filter-reset">Скінуць</button></div>
+    </div>
+    <div class="results-bar">
+      <span>Знойдзена <strong id="place-count">0</strong> запісаў</span>
+      <label class="results-bar__sort">Сартаванне
+        <select id="filter-sort"><option value="title">Па назве</option><option value="region">Па вобласці</option><option value="type">Па тыпе</option></select>
+      </label>
+    </div>
+    <div class="place-grid" id="place-grid"><p class="muted">Загрузка каталога…</p></div>
+    <div class="empty-state" id="empty-state" hidden><h3>Нічога не знойдзена</h3><p>Паспрабуйце змяніць запыт або скінуць фільтры.</p></div>
+    <div class="load-more"><button class="btn btn--ghost" type="button" id="load-more" hidden>Паказаць яшчэ</button></div>
+    <div class="place-note">Апісанні аб’ектаў у афіцыйным каталозе прыведзены на беларускай мове. Сайт не перакладае афіцыйныя тэксты і не замяняе картку heritage.gov.by. Калі ў аб’екта няма загружанага апісання, адкрыйце афіцыйную старонку.</div>
+    <noscript><p class="muted">Для каталога патрэбны JavaScript. Афіцыйныя даныя даступныя на <a href="https://heritage.gov.by/catalog">heritage.gov.by</a>.</p></noscript>
+  </div>
+</section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a class="brand" href="./index.html" aria-label="Спадчына — на галоўную">
+          <span class="brand__mark"><img src="../assets/img/logo.svg" alt=""></span>
+          <span class="brand__text"><span class="brand__name">Спадчына</span><span class="brand__sub">Месцы памяці Беларусі</span></span>
+        </a>
+        <p class="footer-note">Гід па месцах памяці і культурнай спадчыне Беларусі. Адукацыйны некамерцыйны праект.</p>
+      </div>
+      <div>
+        <h2 class="footer-title">Навігацыя</h2>
+        <div class="footer-links">
+          <a href="./map.html">Карта</a>
+          <a href="./stories.html">Месцы і помнікі</a>
+          <a href="./places.html">Афіцыйны каталог</a>
+          <a href="./walks.html">Прагулкі</a>
+          <a href="./routes.html">Мой маршрут</a>
+        </div>
+      </div>
+      <div>
+        <h2 class="footer-title">Даныя</h2>
+        <div class="footer-links">
+          <a href="https://heritage.gov.by/catalog" target="_blank" rel="noopener">Дзяржаўны спіс</a>
+          <a href="https://gosspisok.gov.by/" target="_blank" rel="noopener">Дзяржспіс</a>
+          <a href="https://president.gov.by/ru" target="_blank" rel="noopener">Афіцыйны партал</a>
+          <a href="./sources.html">Крыніцы і крэдыты</a>
+        </div>
+      </div>
+      <div>
+        <h2 class="footer-title">Пра праект</h2>
+        <p class="footer-note" style="margin-top:0">Адукацыйны некамерцыйны праект. Не з’яўляецца афіцыйным сайтам дзяржаўных органаў. Усе факты — са спасылкамі на афіцыйныя крыніцы.</p>
+        <p class="footer-note"><a href="./about.html">Пра праект</a> · <a href="./sources.html">Методыка</a></p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 «Спадчына».</span>
+      <span>Зроблена з павагай да крыніц і памяці.</span>
+    </div>
+  </div>
+</footer>
+<script defer src="../assets/js/common.js"></script>
+<script defer src="../assets/js/places.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="be">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Месцы і помнікі — Спадчына</title>
+<meta name="description" content="Дваццаць адна гісторыя пра месцы памяці і культурную спадчыну Беларусі: мемарыялы, замкі, храмы, крэпасці і гарады.">
+<meta name="theme-color" content="#f4f0e6">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Месцы і помнікі — Спадчына">
+<meta property="og:description" content="Дваццаць адна гісторыя пра месцы памяці і культурную спадчыну Беларусі: мемарыялы, замкі, храмы, крэпасці і гарады.">
+<meta property="og:image" content="../assets/img/curated/khatyn-hero.jpg">
+<link rel="icon" href="../assets/img/favicon.svg" type="image/svg+xml">
+<link rel="preload" href="../assets/fonts/Literata-normal-cyrillic.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="../assets/fonts/GolosText-normal-cyrillic.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="../assets/css/site.css">
+
+</head>
+<body data-base="./" data-assets="../" data-page="stories" class="">
+<a class="skip-link" href="#main">Перайсці да змесціва</a>
+
+<header class="site-header">
+  <div class="container site-header__inner">
+    <a class="brand" href="./index.html" aria-label="Спадчына — на галоўную">
+      <span class="brand__mark"><img src="../assets/img/logo.svg" alt=""></span>
+      <span class="brand__text"><span class="brand__name">Спадчына</span><span class="brand__sub">Месцы памяці Беларусі</span></span>
+    </a>
+    <nav class="site-nav" id="site-menu" data-menu aria-label="Асноўная навігацыя"><a href="./map.html" data-nav="map">Карта</a><a href="./stories.html" data-nav="stories" class="is-active">Месцы</a><a href="./places.html" data-nav="places">Каталог</a><a href="./walks.html" data-nav="walks">Прагулкі</a><a href="./about.html" data-nav="about">Пра праект</a></nav>
+    <div class="header-tools">
+      <div class="lang-switch" aria-label="Мова"><a href="../stories.html" data-lang-link hreflang="ru" lang="ru">RU</a><a href="stories.html" data-lang-link hreflang="be" lang="be" class="is-active" aria-current="page">BE</a><a href="../en/stories.html" data-lang-link hreflang="en" lang="en">EN</a></div>
+      <a class="route-pill" href="./routes.html" aria-label="Маршрут"><span>Маршрут</span> <strong data-route-count>0</strong></a>
+      <button class="menu-toggle" type="button" data-menu-toggle aria-expanded="false" aria-controls="site-menu" aria-label="Адкрыць меню"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+<main id="main">
+
+<section class="page-hero">
+  <div class="container">
+    <div class="page-hero__grid">
+      <div><div class="kicker">Каталог</div><h1>Месцы<br>і помнікі.</h1></div>
+      <p>Тут усё з афіцыйнага каталога: пошук, вобласць, тып і эпоха. Эпоха ставіцца толькі там, дзе яе можна вывесці з датавання. Вялікія нарысы — асобная падборка, не ўвесь спіс.</p>
+    </div>
+    <div class="page-hero__meta"><span><strong data-stat="total">7678</strong> аб’ектаў</span><span><strong>7</strong> абласцей</span><span>Афіцыйныя апісанні</span><span>Абноўлена ў 2026 годзе</span></div>
+  </div>
+</section>
+<section class="section section--tight">
+  <div class="container">
+    <div class="section-head section-head--left"><div><div class="kicker">Вялікія нарысы</div><h2>Падборка з разгорнутым тэкстам.</h2></div><p>Нарысы з фотаздымкамі і крыніцамі. Астатнія месцы — у спісе ніжэй, з афіцыйным апісаннем, калі яно ёсць у каталогу.</p></div>
+    <div class="story-grid" id="essay-grid"><p class="muted">Загрузка нарысаў…</p></div>
+  </div>
+</section>
+<section class="section">
+  <div class="container">
+    <div class="filter-bar" id="stories-filters" aria-label="Фільтры каталога"></div>
+    <div class="results-bar"><span>Паказана <strong id="stories-count">0</strong></span><span>Афіцыйны каталог · heritage.gov.by</span></div>
+    <div class="place-grid" id="stories-grid"><p class="muted">Загрузка каталога…</p></div>
+    <div class="story-note"><button class="btn btn--ghost" type="button" id="stories-more" hidden>Яшчэ</button></div>
+    <noscript><p class="muted">Для спісу патрэбны JavaScript. Афіцыйныя апісанні даступныя на heritage.gov.by.</p></noscript>
+  </div>
+</section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a class="brand" href="./index.html" aria-label="Спадчына — на галоўную">
+          <span class="brand__mark"><img src="../assets/img/logo.svg" alt=""></span>
+          <span class="brand__text"><span class="brand__name">Спадчына</span><span class="brand__sub">Месцы памяці Беларусі</span></span>
+        </a>
+        <p class="footer-note">Гід па месцах памяці і культурнай спадчыне Беларусі. Адукацыйны некамерцыйны праект.</p>
+      </div>
+      <div>
+        <h2 class="footer-title">Навігацыя</h2>
+        <div class="footer-links">
+          <a href="./map.html">Карта</a>
+          <a href="./stories.html">Месцы і помнікі</a>
+          <a href="./places.html">Афіцыйны каталог</a>
+          <a href="./walks.html">Прагулкі</a>
+          <a href="./routes.html">Мой маршрут</a>
+        </div>
+      </div>
+      <div>
+        <h2 class="footer-title">Даныя</h2>
+        <div class="footer-links">
+          <a href="https://heritage.gov.by/catalog" target="_blank" rel="noopener">Дзяржаўны спіс</a>
+          <a href="https://gosspisok.gov.by/" target="_blank" rel="noopener">Дзяржспіс</a>
+          <a href="https://president.gov.by/ru" target="_blank" rel="noopener">Афіцыйны партал</a>
+          <a href="./sources.html">Крыніцы і крэдыты</a>
+        </div>
+      </div>
+      <div>
+        <h2 class="footer-title">Пра праект</h2>
+        <p class="footer-note" style="margin-top:0">Адукацыйны некамерцыйны праект. Не з’яўляецца афіцыйным сайтам дзяржаўных органаў. Усе факты — са спасылкамі на афіцыйныя крыніцы.</p>
+        <p class="footer-note"><a href="./about.html">Пра праект</a> · <a href="./sources.html">Методыка</a></p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 «Спадчына».</span>
+      <span>Зроблена з павагай да крыніц і памяці.</span>
+    </div>
+  </div>
+</footer>
+<script defer src="../assets/js/common.js"></script>
+<script defer src="../assets/js/stories.js"></script>
+
+</body>
+</html>

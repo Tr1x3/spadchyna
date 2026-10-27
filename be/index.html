@@ -1,0 +1,258 @@
+<!doctype html>
+<html lang="be">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Спадчына — прагулкі па месцах памяці Беларусі</title>
+<meta name="description" content="Гатовыя прагулкі па месцах памяці Беларусі: Мінск за гадзіну, Брэст і Гродна за дзве гадзіны. Карта, афіцыйныя апісанні і беларуская кухня побач.">
+<meta name="theme-color" content="#f4f0e6">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Спадчына — прагулкі па месцах памяці Беларусі">
+<meta property="og:description" content="Гатовыя прагулкі па месцах памяці Беларусі: Мінск за гадзіну, Брэст і Гродна за дзве гадзіны. Карта, афіцыйныя апісанні і беларуская кухня побач.">
+<meta property="og:image" content="../assets/img/curated/khatyn-hero.jpg">
+<link rel="icon" href="../assets/img/favicon.svg" type="image/svg+xml">
+<link rel="preload" href="../assets/fonts/Literata-normal-cyrillic.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="../assets/fonts/GolosText-normal-cyrillic.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="../assets/css/site.css">
+
+<link rel="stylesheet" href="../vendor/leaflet/leaflet.css">
+<link rel="stylesheet" href="../vendor/markercluster/MarkerCluster.css">
+<link rel="stylesheet" href="../vendor/markercluster/MarkerCluster.Default.css">
+</head>
+<body data-base="./" data-assets="../" data-page="home" class="">
+<a class="skip-link" href="#main">Перайсці да змесціва</a>
+
+<header class="site-header">
+  <div class="container site-header__inner">
+    <a class="brand" href="./index.html" aria-label="Спадчына — на галоўную">
+      <span class="brand__mark"><img src="../assets/img/logo.svg" alt=""></span>
+      <span class="brand__text"><span class="brand__name">Спадчына</span><span class="brand__sub">Месцы памяці Беларусі</span></span>
+    </a>
+    <nav class="site-nav" id="site-menu" data-menu aria-label="Асноўная навігацыя"><a href="./map.html" data-nav="map">Карта</a><a href="./stories.html" data-nav="stories">Месцы</a><a href="./places.html" data-nav="places">Каталог</a><a href="./walks.html" data-nav="walks">Прагулкі</a><a href="./about.html" data-nav="about">Пра праект</a></nav>
+    <div class="header-tools">
+      <div class="lang-switch" aria-label="Мова"><a href="../index.html" data-lang-link hreflang="ru" lang="ru">RU</a><a href="index.html" data-lang-link hreflang="be" lang="be" class="is-active" aria-current="page">BE</a><a href="../en/index.html" data-lang-link hreflang="en" lang="en">EN</a></div>
+      <a class="route-pill" href="./routes.html" aria-label="Маршрут"><span>Маршрут</span> <strong data-route-count>0</strong></a>
+      <button class="menu-toggle" type="button" data-menu-toggle aria-expanded="false" aria-controls="site-menu" aria-label="Адкрыць меню"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+<main id="main">
+
+<section class="hero">
+  <div class="container">
+    <div class="hero__grid">
+      <div class="hero__content">
+        <div class="hero__eyebrow eyebrow">Гід па месцах памяці</div>
+        <h1>Памятаць —<br>значыць <em>бачыць</em>.</h1>
+        <p class="hero__lead">Гатовыя прагулкі па месцах памяці: ад гадзіны ў цэнтры Мінска да дзвюх гадзін у Брэсце і Гродне. З афіцыйнымі апісаннямі, картай і маршрутам, які можна прайсці самому.</p>
+        <div class="hero__actions">
+          <a class="btn btn--primary" href="./walks.html">Выбраць прагулку <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+          <a class="btn btn--ghost" href="./map.html">Адкрыць карту</a>
+        </div>
+        <div class="hero__meta">
+          <span>Беларусь · 7 абласцей</span>
+          <span><strong data-stat="coords">4933</strong> на карце</span>
+          <span><strong data-stat="total">7 678</strong> аб’ектаў</span>
+        </div>
+      </div>
+      <div class="hero__media">
+        <img src="../assets/img/curated/khatyn-hero.jpg" alt="Хатынь" data-fallback>
+        <span class="hero__stamp">Мінская вобласць · 54°20′ N</span>
+        <div class="hero__caption">
+          <p>Хатынь. Мемарыял на месцы вёскі, спаленай 22 сакавіка 1943 года.</p>
+          <span>Фота: Joakim Berndes<br>CC BY-SA 4.0 · Wikimedia Commons</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="container">
+  <div class="stats-strip" aria-label="аб’ектаў у афіцыйным каталозе">
+    <div class="stat"><div class="stat__num" data-stat="total">7 678</div><div class="stat__label">аб’ектаў у афіцыйным каталозе</div></div>
+    <div class="stat"><div class="stat__num" data-stat="coords">4 933</div><div class="stat__label">кропак з каардынатамі на карце</div></div>
+    <div class="stat"><div class="stat__num" data-stat="curated">21</div><div class="stat__label">вялікіх нарысаў</div></div>
+    <div class="stat"><div class="stat__num" data-stat="regions">7</div><div class="stat__label">абласцей і горад Мінск</div></div>
+  </div>
+</div>
+
+<section class="section section--walks">
+  <div class="container">
+    <div class="section-head">
+      <div><div class="kicker">Гатовыя прагулкі</div><h2>Адна гадзіна. Дзве гадзіны. Без спешкі.</h2></div>
+      <p>Мы сабралі маршруты па часе: кароткая прагулка па цэнтры Мінска, дзве гадзіны па месцах памяці і больш доўгія маршруты па Брэсце, Гродне, Віцебску, Полацку, Гомелі, Магілёве, Каменцы і Нясвіжы. У кожнай прыпынку — афіцыйнае апісанне і спасылка на крыніцу.</p>
+    </div>
+    <div class="walk-grid" id="home-walks"><p class="muted">Загрузка прагулак…</p></div>
+    <div class="story-note"><span>Час паказаны арыенціровачна — без уліку наведвання музеяў і прыпынкаў на каву.</span><a class="link-arrow" href="./walks.html">Усе прагулкі <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div>
+  </div>
+</section>
+
+<section class="section section--map">
+  <div class="container">
+    <div class="section-head">
+      <div><div class="kicker">Карта Беларусі</div><h2>Усе месцы з каардынатамі — на адной карце.</h2></div>
+      <p>Мяжа краіны і кропкі афіцыйнага каталога. Эпоха бачная толькі там, дзе яна вынікае з датавання або з поля нарыса. Прагулка малюецца па ўжо сабраных прыпынках.</p>
+    </div>
+    <div class="home-map-bar" id="home-map-bar"></div>
+    <div id="home-map" class="home-map" role="application" aria-label="Карта Беларусі"></div>
+    <p class="home-map-note" id="home-map-note"></p>
+  </div>
+</section>
+
+<section class="section section--paper">
+  <div class="container">
+    <div class="section-head">
+      <div><div class="kicker">Вялікія нарысы</div><h2>Не даты, а месцы, дзе гісторыя становіцца адчувальнай.</h2></div>
+      <p>Мы выбіралі аб’екты, без якіх цяжка ўявіць памяць пра вайну і культурную спадчыну Беларусі. У кожнага — афіцыйныя крыніцы, фотаздымкі і каардынаты.</p>
+    </div>
+    <div class="story-grid" id="home-stories"><article class="story-card story-card--wide">
+  <a class="story-card__media" href="./place/khatyn.html">
+    <span class="story-card__index">00</span>
+    <img src="../assets/img/curated/khatyn-card.jpg" alt="Хатынь" loading="lazy" data-fallback>
+  </a>
+  <div class="story-card__body">
+    <div class="story-card__meta"><span>Мінская вобласць</span><span>Мемарыял</span></div>
+    <h3 class="story-card__title"><a href="./place/khatyn.html">Хатынь</a></h3>
+    <p class="story-card__sub">Мемарыял на месцы спаленай вёскі</p>
+    <div class="story-card__foot"><span>1943 · мемарыял з 1969</span><a href="./place/khatyn.html">Чытаць</a></div>
+  </div>
+</article><article class="story-card story-card--small">
+  <a class="story-card__media" href="./place/brest.html">
+    <span class="story-card__index">01</span>
+    <img src="../assets/img/curated/brest-card.jpg" alt="Брэсцкая крэпасць" loading="lazy" data-fallback>
+  </a>
+  <div class="story-card__body">
+    <div class="story-card__meta"><span>Брэсцкая вобласць</span><span>Мемарыял</span></div>
+    <h3 class="story-card__title"><a href="./place/brest.html">Брэсцкая крэпасць</a></h3>
+    <p class="story-card__sub">Крэпасць-герой на заходняй мяжы</p>
+    <div class="story-card__foot"><span>1830–1842 · абарона 1941</span><a href="./place/brest.html">Чытаць</a></div>
+  </div>
+</article><article class="story-card story-card--small">
+  <a class="story-card__media" href="./place/trostenets.html">
+    <span class="story-card__index">02</span>
+    <img src="../assets/img/curated/trostenets-card.jpg" alt="Трасцянец" loading="lazy" data-fallback>
+  </a>
+  <div class="story-card__body">
+    <div class="story-card__meta"><span>горад Мінск</span><span>Мемарыял</span></div>
+    <h3 class="story-card__title"><a href="./place/trostenets.html">Трасцянец</a></h3>
+    <p class="story-card__sub">Найбуйнейшы лагер смерці на тэрыторыі СССР</p>
+    <div class="story-card__foot"><span>1942–1944 · мемарыял з 2015</span><a href="./place/trostenets.html">Чытаць</a></div>
+  </div>
+</article><article class="story-card ">
+  <a class="story-card__media" href="./place/krasny-bereg.html">
+    <span class="story-card__index">03</span>
+    <img src="../assets/img/curated/krasny-bereg-card.jpg" alt="Красны Бераг" loading="lazy" data-fallback>
+  </a>
+  <div class="story-card__body">
+    <div class="story-card__meta"><span>Гомельская вобласць</span><span>Мемарыял</span></div>
+    <h3 class="story-card__title"><a href="./place/krasny-bereg.html">Красны Бераг</a></h3>
+    <p class="story-card__sub">Мемарыял «Дзецям — ахвярам вайны»</p>
+    <div class="story-card__foot"><span>1941–1944 · мемарыял з 2007</span><a href="./place/krasny-bereg.html">Чытаць</a></div>
+  </div>
+</article><article class="story-card ">
+  <a class="story-card__media" href="./place/mir.html">
+    <span class="story-card__index">04</span>
+    <img src="../assets/img/curated/mir-card.jpg" alt="Мірскі замак" loading="lazy" data-fallback>
+  </a>
+  <div class="story-card__body">
+    <div class="story-card__meta"><span>Гродзенская вобласць</span><span>Замак</span></div>
+    <h3 class="story-card__title"><a href="./place/mir.html">Мірскі замак</a></h3>
+    <p class="story-card__sub">Першы прыватны каменны замак ВКЛ</p>
+    <div class="story-card__foot"><span>XVI–XX стст.</span><a href="./place/mir.html">Чытаць</a></div>
+  </div>
+</article><article class="story-card ">
+  <a class="story-card__media" href="./place/ola.html">
+    <span class="story-card__index">05</span>
+    <img src="../assets/img/curated/ola-card.jpg" alt="Ола" loading="lazy" data-fallback>
+  </a>
+  <div class="story-card__body">
+    <div class="story-card__meta"><span>Гомельская вобласць</span><span>Мемарыял</span></div>
+    <h3 class="story-card__title"><a href="./place/ola.html">Ола</a></h3>
+    <p class="story-card__sub">Мемарыял спаленай вёскі</p>
+    <div class="story-card__foot"><span>1944 · мемарыял з 2020</span><a href="./place/ola.html">Чытаць</a></div>
+  </div>
+</article></div>
+    <div class="story-note"><span>Усе гісторыі суправаджаюцца спасылкамі на афіцыйныя сайты музеяў і Дзяржаўны спіс.</span><a class="link-arrow" href="./stories.html">Усе месцы каталога <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div>
+  </div>
+</section>
+
+<section class="section section--dark route-band">
+  <div class="container">
+    <div class="route-band__grid">
+      <div>
+        <div class="kicker">Маршрут</div>
+        <h2>Саберыце сваю карту памяці.</h2>
+        <p>Выберыце гатовую прагулку або дадайце свае месцы з каталога. Маршрут захоўваецца ў браўзеры — без рэгістрацыі.</p>
+        <a class="btn btn--light" href="./walks.html">Выбраць прагулку <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      </div>
+      <div class="route-steps">
+        <div class="route-step"><div class="route-step__num">01</div><h3>Выберыце месцы</h3><p>Праз пошук або карткі аб’ектаў.</p></div>
+        <div class="route-step"><div class="route-step__num">02</div><h3>Расстаўце парадак</h3><p>Мяняйце кропкі месцамі ў спісе.</p></div>
+        <div class="route-step"><div class="route-step__num">03</div><h3>Адкрыйце маршрут</h3><p>Спасылкі на Google, Яндекс і OSM.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section section--tight">
+  <div class="container">
+    <div class="section-head section-head--left"><div><div class="kicker">Крыніцы</div><h2>Не пераказ, а правераная аснова.</h2></div><p>Асноўны слой даных — Дзяржаўны спіс гісторыка-культурных каштоўнасцей. Аўтарскія тэксты абапіраюцца на афіцыйныя сайты музеяў і мемарыялаў.</p></div>
+    <div class="trust-grid">
+      <div class="trust-item"><h3>Афіцыйны каталог</h3><p>Назвы, адрасы, катэгорыі і выявы аб’ектаў — <a href="https://heritage.gov.by/catalog" target="_blank" rel="noopener">heritage.gov.by</a>. Апісанні прыведзены на мове арыгінала.</p></div>
+      <div class="trust-item"><h3>Музеі і мемарыялы</h3><p>Хатынь, Брэсцкая крэпасць, Ола, Красны Бераг, Азарычы і іншыя — са спасылкамі на іх афіцыйныя старонкі.</p></div>
+      <div class="trust-item"><h3>Фотаздымкі і ліцэнзіі</h3><p>Здымкі Wikimedia Commons — з указаннем аўтара і ліцэнзіі. Фота музеяў — з указаннем крыніцы. Усе крэдыты — <a href="./sources.html">на асобнай старонцы</a>.</p></div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a class="brand" href="./index.html" aria-label="Спадчына — на галоўную">
+          <span class="brand__mark"><img src="../assets/img/logo.svg" alt=""></span>
+          <span class="brand__text"><span class="brand__name">Спадчына</span><span class="brand__sub">Месцы памяці Беларусі</span></span>
+        </a>
+        <p class="footer-note">Гід па месцах памяці і культурнай спадчыне Беларусі. Адукацыйны некамерцыйны праект.</p>
+      </div>
+      <div>
+        <h2 class="footer-title">Навігацыя</h2>
+        <div class="footer-links">
+          <a href="./map.html">Карта</a>
+          <a href="./stories.html">Месцы і помнікі</a>
+          <a href="./places.html">Афіцыйны каталог</a>
+          <a href="./walks.html">Прагулкі</a>
+          <a href="./routes.html">Мой маршрут</a>
+        </div>
+      </div>
+      <div>
+        <h2 class="footer-title">Даныя</h2>
+        <div class="footer-links">
+          <a href="https://heritage.gov.by/catalog" target="_blank" rel="noopener">Дзяржаўны спіс</a>
+          <a href="https://gosspisok.gov.by/" target="_blank" rel="noopener">Дзяржспіс</a>
+          <a href="https://president.gov.by/ru" target="_blank" rel="noopener">Афіцыйны партал</a>
+          <a href="./sources.html">Крыніцы і крэдыты</a>
+        </div>
+      </div>
+      <div>
+        <h2 class="footer-title">Пра праект</h2>
+        <p class="footer-note" style="margin-top:0">Адукацыйны некамерцыйны праект. Не з’яўляецца афіцыйным сайтам дзяржаўных органаў. Усе факты — са спасылкамі на афіцыйныя крыніцы.</p>
+        <p class="footer-note"><a href="./about.html">Пра праект</a> · <a href="./sources.html">Методыка</a></p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 «Спадчына».</span>
+      <span>Зроблена з павагай да крыніц і памяці.</span>
+    </div>
+  </div>
+</footer>
+<script defer src="../vendor/leaflet/leaflet.js"></script>
+<script defer src="../vendor/markercluster/leaflet.markercluster.js"></script>
+<script defer src="../assets/js/common.js"></script>
+<script defer src="../assets/js/walks.js"></script>
+<script defer src="../assets/js/home.js"></script>
+
+</body>
+</html>

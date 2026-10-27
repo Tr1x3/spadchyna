@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Официальный каталог — Спадчына</title>
+<meta name="description" content="Каталог объектов Государственного списка историко-культурных ценностей Беларуси: поиск по названию, области и типу, карта и маршрут.">
+<meta name="theme-color" content="#f4f0e6">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Официальный каталог — Спадчына">
+<meta property="og:description" content="Каталог объектов Государственного списка историко-культурных ценностей Беларуси: поиск по названию, области и типу, карта и маршрут.">
+<meta property="og:image" content="./assets/img/curated/khatyn-hero.jpg">
+<link rel="icon" href="./assets/img/favicon.svg" type="image/svg+xml">
+<link rel="preload" href="./assets/fonts/Literata-normal-cyrillic.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="./assets/fonts/GolosText-normal-cyrillic.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="./assets/css/site.css">
+
+</head>
+<body data-base="./" data-assets="./" data-page="places" class="">
+<a class="skip-link" href="#main">Перейти к содержанию</a>
+
+<header class="site-header">
+  <div class="container site-header__inner">
+    <a class="brand" href="./index.html" aria-label="Спадчына — на главную">
+      <span class="brand__mark"><img src="./assets/img/logo.svg" alt=""></span>
+      <span class="brand__text"><span class="brand__name">Спадчына</span><span class="brand__sub">Места памяти Беларуси</span></span>
+    </a>
+    <nav class="site-nav" id="site-menu" data-menu aria-label="Основная навигация"><a href="./map.html" data-nav="map">Карта</a><a href="./stories.html" data-nav="stories">Места</a><a href="./places.html" data-nav="places" class="is-active">Каталог</a><a href="./walks.html" data-nav="walks">Прогулки</a><a href="./about.html" data-nav="about">О проекте</a></nav>
+    <div class="header-tools">
+      <div class="lang-switch" aria-label="Язык"><a href="places.html" data-lang-link hreflang="ru" lang="ru" class="is-active" aria-current="page">RU</a><a href="be/places.html" data-lang-link hreflang="be" lang="be">BE</a><a href="en/places.html" data-lang-link hreflang="en" lang="en">EN</a></div>
+      <a class="route-pill" href="./routes.html" aria-label="Маршрут"><span>Маршрут</span> <strong data-route-count>0</strong></a>
+      <button class="menu-toggle" type="button" data-menu-toggle aria-expanded="false" aria-controls="site-menu" aria-label="Открыть меню"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+<main id="main">
+
+<section class="page-hero">
+  <div class="container">
+    <div class="page-hero__grid">
+      <div><div class="kicker">Государственный список</div><h1>Официальный<br>каталог.</h1></div>
+      <p>7 678 объектов историко-культурного наследия Беларуси. Ищите по названию, области и типу; открывайте карточки и добавляйте места в маршрут.</p>
+    </div>
+    <div class="page-hero__meta"><span><strong data-stat="total">7 678</strong> объектов</span><span><strong data-stat="coords">4 933</strong> с координатами</span><span><strong>7</strong> областей</span><span>Данные heritage.gov.by</span></div>
+  </div>
+</section>
+<section class="section section--tight">
+  <div class="container">
+    <div class="filter-bar" role="search" aria-label="Поиск">
+      <div class="filter-field filter-field--search"><label for="filter-q">Поиск</label><input id="filter-q" type="search" placeholder="Название, адрес, тип…" autocomplete="off"></div>
+      <div class="filter-field"><label for="filter-region">Область</label><select id="filter-region"></select></div>
+      <div class="filter-field"><label for="filter-group">Тип</label><select id="filter-group"></select></div>
+      <label class="checkline"><input id="filter-curated" type="checkbox"> Только истории</label>
+      <div class="filter-actions"><button class="btn btn--ghost btn--small" type="button" id="filter-reset">Сбросить</button></div>
+    </div>
+    <div class="results-bar">
+      <span>Найдено <strong id="place-count">0</strong> записей</span>
+      <label class="results-bar__sort">Сортировка
+        <select id="filter-sort"><option value="title">По названию</option><option value="region">По области</option><option value="type">По типу</option></select>
+      </label>
+    </div>
+    <div class="place-grid" id="place-grid"><p class="muted">Загрузка каталога…</p></div>
+    <div class="empty-state" id="empty-state" hidden><h3>Ничего не найдено</h3><p>Попробуйте изменить запрос или сбросить фильтры.</p></div>
+    <div class="load-more"><button class="btn btn--ghost" type="button" id="load-more" hidden>Показать ещё</button></div>
+    <div class="place-note">Описания объектов в официальном каталоге приведены на белорусском языке. Сайт не переводит официальные тексты и не заменяет карточку heritage.gov.by. Если у объекта нет загруженного описания, откройте официальную страницу.</div>
+    <noscript><p class="muted">Для каталога нужен JavaScript. Официальные данные доступны на <a href="https://heritage.gov.by/catalog">heritage.gov.by</a>.</p></noscript>
+  </div>
+</section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a class="brand" href="./index.html" aria-label="Спадчына — на главную">
+          <span class="brand__mark"><img src="./assets/img/logo.svg" alt=""></span>
+          <span class="brand__text"><span class="brand__name">Спадчына</span><span class="brand__sub">Места памяти Беларуси</span></span>
+        </a>
+        <p class="footer-note">Путеводитель по местам памяти и культурному наследию Беларуси. Образовательный некоммерческий проект.</p>
+      </div>
+      <div>
+        <h2 class="footer-title">Навигация</h2>
+        <div class="footer-links">
+          <a href="./map.html">Карта</a>
+          <a href="./stories.html">Места и памятники</a>
+          <a href="./places.html">Официальный каталог</a>
+          <a href="./walks.html">Прогулки</a>
+          <a href="./routes.html">Мой маршрут</a>
+        </div>
+      </div>
+      <div>
+        <h2 class="footer-title">Данные</h2>
+        <div class="footer-links">
+          <a href="https://heritage.gov.by/catalog" target="_blank" rel="noopener">Государственный список</a>
+          <a href="https://gosspisok.gov.by/" target="_blank" rel="noopener">Госсписок</a>
+          <a href="https://president.gov.by/ru" target="_blank" rel="noopener">Официальный портал</a>
+          <a href="./sources.html">Источники и кредиты</a>
+        </div>
+      </div>
+      <div>
+        <h2 class="footer-title">О проекте</h2>
+        <p class="footer-note" style="margin-top:0">Образовательный некоммерческий проект. Не является официальным сайтом государственных органов. Все факты — со ссылками на официальные источники.</p>
+        <p class="footer-note"><a href="./about.html">О проекте</a> · <a href="./sources.html">Методика</a></p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 «Спадчына».</span>
+      <span>Сделано с уважением к источникам и памяти.</span>
+    </div>
+  </div>
+</footer>
+<script defer src="./assets/js/common.js"></script>
+<script defer src="./assets/js/places.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Walk — Spadchyna</title>
+<meta name="description" content="A ready-made walk through places of memory and cultural heritage in Belarus: map, stops, official sources and Belarusian food nearby.">
+<meta name="theme-color" content="#f4f0e6">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Walk — Spadchyna">
+<meta property="og:description" content="A ready-made walk through places of memory and cultural heritage in Belarus: map, stops, official sources and Belarusian food nearby.">
+<meta property="og:image" content="../assets/img/curated/khatyn-hero.jpg">
+<link rel="icon" href="../assets/img/favicon.svg" type="image/svg+xml">
+<link rel="preload" href="../assets/fonts/Literata-normal-cyrillic.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="../assets/fonts/GolosText-normal-cyrillic.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="../assets/css/site.css">
+<link rel="stylesheet" href="../vendor/leaflet/leaflet.css">
+</head>
+<body data-base="./" data-assets="../" data-page="walks" class="">
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="site-header">
+  <div class="container site-header__inner">
+    <a class="brand" href="./index.html" aria-label="Spadchyna — home">
+      <span class="brand__mark"><img src="../assets/img/logo.svg" alt=""></span>
+      <span class="brand__text"><span class="brand__name">Спадчына</span><span class="brand__sub">Places of memory in Belarus</span></span>
+    </a>
+    <nav class="site-nav" id="site-menu" data-menu aria-label="Main navigation"><a href="./map.html" data-nav="map">Map</a><a href="./stories.html" data-nav="stories">Places</a><a href="./places.html" data-nav="places">Catalogue</a><a href="./walks.html" data-nav="walks" class="is-active">Walks</a><a href="./about.html" data-nav="about">About</a></nav>
+    <div class="header-tools">
+      <div class="lang-switch" aria-label="Language"><a href="../walk.html" data-lang-link hreflang="ru" lang="ru">RU</a><a href="../be/walk.html" data-lang-link hreflang="be" lang="be">BE</a><a href="walk.html" data-lang-link hreflang="en" lang="en" class="is-active" aria-current="page">EN</a></div>
+      <a class="route-pill" href="./routes.html" aria-label="Route"><span>Route</span> <strong data-route-count>0</strong></a>
+      <button class="menu-toggle" type="button" data-menu-toggle aria-expanded="false" aria-controls="site-menu" aria-label="Open menu"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+<main id="main">
+
+<div id="walk-content"><div class="container text-page"><p class="muted">Loading the walk…</p></div></div>
+<noscript><div class="container text-page"><p>JavaScript is required to view the walk. Official descriptions are available at <a href="https://heritage.gov.by/catalog">heritage.gov.by</a>.</p></div></noscript>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a class="brand" href="./index.html" aria-label="Spadchyna — home">
+          <span class="brand__mark"><img src="../assets/img/logo.svg" alt=""></span>
+          <span class="brand__text"><span class="brand__name">Спадчына</span><span class="brand__sub">Places of memory in Belarus</span></span>
+        </a>
+        <p class="footer-note">A guide to places of memory and cultural heritage in Belarus. An educational non-commercial project.</p>
+      </div>
+      <div>
+        <h2 class="footer-title">Navigation</h2>
+        <div class="footer-links">
+          <a href="./map.html">Map</a>
+          <a href="./stories.html">Places and monuments</a>
+          <a href="./places.html">Official catalogue</a>
+          <a href="./walks.html">Walks</a>
+          <a href="./routes.html">My route</a>
+        </div>
+      </div>
+      <div>
+        <h2 class="footer-title">Data</h2>
+        <div class="footer-links">
+          <a href="https://heritage.gov.by/catalog" target="_blank" rel="noopener">State List</a>
+          <a href="https://gosspisok.gov.by/" target="_blank" rel="noopener">State Register</a>
+          <a href="https://president.gov.by/ru" target="_blank" rel="noopener">Official portal</a>
+          <a href="./sources.html">Sources and credits</a>
+        </div>
+      </div>
+      <div>
+        <h2 class="footer-title">About</h2>
+        <p class="footer-note" style="margin-top:0">An educational non-commercial project. Not an official website of state bodies. All facts are linked to official sources.</p>
+        <p class="footer-note"><a href="./about.html">About</a> · <a href="./sources.html">Methodology</a></p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Spadchyna.</span>
+      <span>Made with respect for sources and memory.</span>
+    </div>
+  </div>
+</footer>
+<script defer src="../vendor/leaflet/leaflet.js"></script>
+<script defer src="../assets/js/common.js"></script>
+<script defer src="../assets/js/walk.js"></script>
+
+</body>
+</html>

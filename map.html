@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Карта памяти — Спадчына</title>
+<meta name="description" content="Интерактивная карта объектов культурного наследия и мест памяти Беларуси. Фильтры по области, типу и эпохе. На карте — объекты каталога, у которых есть координаты.">
+<meta name="theme-color" content="#f4f0e6">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Карта памяти — Спадчына">
+<meta property="og:description" content="Интерактивная карта объектов культурного наследия и мест памяти Беларуси. Фильтры по области, типу и эпохе. На карте — объекты каталога, у которых есть координаты.">
+<meta property="og:image" content="./assets/img/curated/khatyn-hero.jpg">
+<link rel="icon" href="./assets/img/favicon.svg" type="image/svg+xml">
+<link rel="preload" href="./assets/fonts/Literata-normal-cyrillic.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="./assets/fonts/GolosText-normal-cyrillic.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="./assets/css/site.css">
+<link rel="stylesheet" href="./vendor/leaflet/leaflet.css">
+<link rel="stylesheet" href="./vendor/markercluster/MarkerCluster.css">
+<link rel="stylesheet" href="./vendor/markercluster/MarkerCluster.Default.css">
+</head>
+<body data-base="./" data-assets="./" data-page="map" class="">
+<a class="skip-link" href="#main">Перейти к содержанию</a>
+
+<header class="site-header">
+  <div class="container site-header__inner">
+    <a class="brand" href="./index.html" aria-label="Спадчына — на главную">
+      <span class="brand__mark"><img src="./assets/img/logo.svg" alt=""></span>
+      <span class="brand__text"><span class="brand__name">Спадчына</span><span class="brand__sub">Места памяти Беларуси</span></span>
+    </a>
+    <nav class="site-nav" id="site-menu" data-menu aria-label="Основная навигация"><a href="./map.html" data-nav="map" class="is-active">Карта</a><a href="./stories.html" data-nav="stories">Места</a><a href="./places.html" data-nav="places">Каталог</a><a href="./walks.html" data-nav="walks">Прогулки</a><a href="./about.html" data-nav="about">О проекте</a></nav>
+    <div class="header-tools">
+      <div class="lang-switch" aria-label="Язык"><a href="map.html" data-lang-link hreflang="ru" lang="ru" class="is-active" aria-current="page">RU</a><a href="be/map.html" data-lang-link hreflang="be" lang="be">BE</a><a href="en/map.html" data-lang-link hreflang="en" lang="en">EN</a></div>
+      <a class="route-pill" href="./routes.html" aria-label="Маршрут"><span>Маршрут</span> <strong data-route-count>0</strong></a>
+      <button class="menu-toggle" type="button" data-menu-toggle aria-expanded="false" aria-controls="site-menu" aria-label="Открыть меню"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+<main id="main">
+
+<div class="map-page">
+  <aside class="map-panel" aria-label="Интерактивная карта Беларуси">
+    <div class="map-panel__head"><div><div class="kicker">Беларусь</div><h1>Карта памяти</h1></div><div class="map-panel__count"><strong id="map-count">—</strong>объектов</div></div>
+    <div class="map-filters">
+      <div class="filter-field filter-field--search"><label for="map-q">Поиск по карте</label><input id="map-q" type="search" placeholder="Название, адрес, тип…" autocomplete="off"></div>
+      <div class="map-filters__row">
+        <div class="filter-field"><label for="map-region">Область</label><select id="map-region"></select></div>
+        <div class="filter-field"><label for="map-group">Тип</label><select id="map-group"></select></div><div class="filter-field"><label for="map-era">Эпоха</label><select id="map-era"></select></div>
+      </div>
+      <div class="filter-actions"><button class="btn btn--ghost btn--small" type="button" id="map-reset">Сбросить фильтры</button></div>
+    </div>
+    <div class="map-panel__section">
+      <h2>Большие очерки</h2>
+      <div class="map-stories" id="map-stories"><p class="muted" style="font-size:12px;line-height:1.6">Загрузка историй…</p></div>
+      <p class="map-catalog-link" id="map-catalog-link">Загрузка каталога…</p>
+    </div>
+  </aside>
+  <div class="map-canvas-wrap">
+    <div id="map" role="application" aria-label="Интерактивная карта Беларуси"></div>
+    <div class="map-tools" aria-label="Интерактивная карта Беларуси">
+      <button type="button" data-map-tool="fit">Вся Беларусь</button>
+      <button type="button" data-map-tool="locate">Моё место</button>
+      <button type="button" data-map-tool="zoom-in" aria-label="Приблизить">+</button>
+      <button type="button" data-map-tool="zoom-out" aria-label="Отдалить">−</button>
+    </div>
+    <div class="map-legend" aria-label="Легенда">
+      <h3>Легенда</h3>
+      <ul>
+        <li><span class="legend-dot legend-dot--curated"></span>Истории проекта</li>
+        <li><span class="legend-dot legend-dot--architecture"></span>Архитектура</li>
+        <li><span class="legend-dot legend-dot--archaeology"></span>Археология</li>
+        <li><span class="legend-dot legend-dot--history"></span>История</li>
+        <li><span class="legend-dot legend-dot--urban"></span>Градостроительство</li>
+        <li><span class="legend-dot legend-dot--art"></span>Искусство</li>
+        <li><span class="legend-dot legend-dot--reserve"></span>Заповедное</li>
+        <li><span class="legend-dot legend-dot--other"></span>Другое</li>
+      </ul>
+    </div>
+    <div class="map-note">Подложка — OpenStreetMap и CARTO. Не все объекты имеют точные координаты.</div>
+  </div>
+</div>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a class="brand" href="./index.html" aria-label="Спадчына — на главную">
+          <span class="brand__mark"><img src="./assets/img/logo.svg" alt=""></span>
+          <span class="brand__text"><span class="brand__name">Спадчына</span><span class="brand__sub">Места памяти Беларуси</span></span>
+        </a>
+        <p class="footer-note">Путеводитель по местам памяти и культурному наследию Беларуси. Образовательный некоммерческий проект.</p>
+      </div>
+      <div>
+        <h2 class="footer-title">Навигация</h2>
+        <div class="footer-links">
+          <a href="./map.html">Карта</a>
+          <a href="./stories.html">Места и памятники</a>
+          <a href="./places.html">Официальный каталог</a>
+          <a href="./walks.html">Прогулки</a>
+          <a href="./routes.html">Мой маршрут</a>
+        </div>
+      </div>
+      <div>
+        <h2 class="footer-title">Данные</h2>
+        <div class="footer-links">
+          <a href="https://heritage.gov.by/catalog" target="_blank" rel="noopener">Государственный список</a>
+          <a href="https://gosspisok.gov.by/" target="_blank" rel="noopener">Госсписок</a>
+          <a href="https://president.gov.by/ru" target="_blank" rel="noopener">Официальный портал</a>
+          <a href="./sources.html">Источники и кредиты</a>
+        </div>
+      </div>
+      <div>
+        <h2 class="footer-title">О проекте</h2>
+        <p class="footer-note" style="margin-top:0">Образовательный некоммерческий проект. Не является официальным сайтом государственных органов. Все факты — со ссылками на официальные источники.</p>
+        <p class="footer-note"><a href="./about.html">О проекте</a> · <a href="./sources.html">Методика</a></p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 «Спадчына».</span>
+      <span>Сделано с уважением к источникам и памяти.</span>
+    </div>
+  </div>
+</footer>
+<script defer src="./vendor/leaflet/leaflet.js"></script>
+<script defer src="./vendor/markercluster/leaflet.markercluster.js"></script>
+<script defer src="./assets/js/common.js"></script>
+<script defer src="./assets/js/map.js"></script>
+
+</body>
+</html>

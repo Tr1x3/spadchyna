@@ -1,0 +1,1445 @@
+[
+ {
+  "slug": "khatyn",
+  "title": "Хатынь",
+  "subtitle": "Мемориал на месте сожжённой деревни",
+  "region": "Минская область",
+  "regionKey": "MinskRegion",
+  "type": "Мемориал",
+  "typeKey": "memory",
+  "era": "1943 · мемориал с 1969",
+  "eraBucket": "soviet",
+  "coords": [
+   54.334601,
+   27.943582
+  ],
+  "summary": "Деревня, сожжённая вместе с жителями 22 марта 1943 года. Сегодня Хатынь — один из главных символов памяти о сотнях уничтоженных белорусских деревень.",
+  "body": [
+   "Хатынь впервые упоминается в письменных источниках в середине XVI века. До войны это была небольшая деревня в Логойском районе, жители которой занимались сельским хозяйством.",
+   "22 марта 1943 года карательный батальон окружил деревню. Людей согнали в колхозный сарай и подожгли; в огне погибли 149 жителей, в том числе 75 детей. Деревня была полностью уничтожена.",
+   "Мемориальный комплекс открыт в 1969 году. Его авторы — архитекторы Ю. Градов, В. Занкович, Л. Левин и скульптор С. Селиханов. Планировка повторяет структуру бывшей деревни: здесь есть Кладбище деревень, Площадь памяти, Стена скорби и Дерево жизни.",
+   "Центральная скульптура «Непокорённый человек» изображает жителя Хатыни Иосифа Каминского с убитым сыном на руках. Мемориал стал символом памяти о сотнях белорусских деревень, разделивших судьбу Хатыни."
+  ],
+  "facts": [
+   [
+    "Где",
+    "Минская область, Логойский район, 54-й км шоссе Минск — Витебск"
+   ],
+   [
+    "Когда",
+    "22 марта 1943 · мемориал открыт в 1969"
+   ],
+   [
+    "Статус",
+    "Историко-культурная ценность, мемориальный комплекс"
+   ]
+  ],
+  "sources": [
+   [
+    "Мемориальный комплекс «Хатынь»",
+    "https://khatyn.by/ru/"
+   ],
+   [
+    "Государственный список",
+    "https://heritage.gov.by/be/catalog/memaryialny-kompleks-khatyn-000279"
+   ]
+  ],
+  "catalog": "memaryialny-kompleks-khatyn-000279",
+  "images": [
+   {
+    "src": "assets/img/curated/khatyn-hero.jpg",
+    "caption": "Мемориал на месте сожжённой деревни",
+    "credit": "Joakim Berndes · CC BY-SA 4.0 · Wikimedia Commons",
+    "page": "https://commons.wikimedia.org/wiki/File:Khatyn_Memorial_in_Belarus-2229.jpg"
+   },
+   {
+    "src": "assets/img/curated/khatyn-1.jpg",
+    "caption": "Обелиск над братской могилой",
+    "credit": "Joakim Berndes · CC BY-SA 4.0 · Wikimedia Commons",
+    "page": "https://commons.wikimedia.org/wiki/File:Khatyn_Memorial_in_Belarus-2241.jpg"
+   },
+   {
+    "src": "assets/img/curated/khatyn-2.jpg",
+    "caption": "Кладбище деревень",
+    "credit": "Joakim Berndes · CC BY-SA 4.0 · Wikimedia Commons",
+    "page": "https://commons.wikimedia.org/wiki/File:Khatyn_Memorial_in_Belarus-2250.jpg"
+   },
+   {
+    "src": "assets/img/curated/khatyn-3.jpg",
+    "caption": "Скульптура «Непокорённый человек»",
+    "credit": "Joakim Berndes · CC BY-SA 4.0 · Wikimedia Commons",
+    "page": "https://commons.wikimedia.org/wiki/File:Khatyn_Memorial_in_Belarus-2264.jpg"
+   }
+  ],
+  "card": "assets/img/curated/khatyn-card.jpg"
+ },
+ {
+  "slug": "brest",
+  "title": "Брестская крепость",
+  "subtitle": "Крепость-герой на западной границе",
+  "region": "Брестская область",
+  "regionKey": "BrestRegion",
+  "type": "Мемориал",
+  "typeKey": "memory",
+  "era": "1830–1842 · оборона 1941",
+  "eraBucket": "soviet",
+  "coords": [
+   52.083682,
+   23.658184
+  ],
+  "summary": "Крепость XIX века, ставшая одним из самых стойких очагов сопротивления в июне 1941 года. С 1965 года — «Крепость-герой».",
+  "body": [
+   "Брестская крепость построена в 1830–1842 годах как крепость I класса на западной границе Российской империи. Она состоит из четырёх укреплений — Цитадели, Кобринского, Волынского и Тереспольского.",
+   "В июне 1941 года крепость стала одним из самых стойких очагов сопротивления. Гарнизон в окружении испытывал нехватку боеприпасов, медикаментов, продовольствия и воды; последние очаги сопротивления сохранялись до 20-х чисел июля.",
+   "8 мая 1965 года крепости присвоено звание «Крепость-герой». Мемориальный комплекс открыт 25 сентября 1971 года; его площадь — около 70 га.",
+   "Сегодня здесь объединены руины и сохранившиеся сооружения, скульптурные композиции и музейные экспозиции: Музей обороны, «Музей войны — территория мира», «Летопись Брестской крепости», «Оборона Восточного форта» и филиал «Музей 5 форт»."
+  ],
+  "facts": [
+   [
+    "Где",
+    "г. Брест, ул. Героев обороны Брестской крепости, 60"
+   ],
+   [
+    "Когда",
+    "1830–1842 · оборона июнь 1941 · мемориал 1971"
+   ],
+   [
+    "Статус",
+    "«Крепость-герой», историко-культурная ценность"
+   ]
+  ],
+  "sources": [
+   [
+    "О Брестской крепости",
+    "https://brest-fortress.by/posetitelyam/o-brestskoj-kreposti"
+   ],
+   [
+    "Государственный список",
+    "https://heritage.gov.by/be/catalog/memaryialny-kompleks-brestckaia-krepastc-geroi-004"
+   ]
+  ],
+  "catalog": "memaryialny-kompleks-brestckaia-krepastc-geroi-004",
+  "images": [
+   {
+    "src": "assets/img/curated/brest-hero.jpg",
+    "caption": "Крепость-герой на западной границе",
+    "credit": "Alexxx1979 · CC BY-SA 4.0 · Wikimedia Commons",
+    "page": "https://commons.wikimedia.org/wiki/File:Brest_Brest_Fortress_Kholm_Gate_9209_2150.jpg"
+   },
+   {
+    "src": "assets/img/curated/brest-1.jpg",
+    "caption": "Церковь Святителя Николая",
+    "credit": "Mike1979 Russia · CC BY-SA 3.0 · Wikimedia Commons",
+    "page": "https://commons.wikimedia.org/wiki/File:Brest_Fortress_Church_of_Saint_Nicholas_2023-04-23_3554.jpg"
+   },
+   {
+    "src": "assets/img/curated/brest-2.jpg",
+    "caption": "Артиллерийские орудия",
+    "credit": "Nakonana · CC BY-SA 4.0 · Wikimedia Commons",
+    "page": "https://commons.wikimedia.org/wiki/File:Cannons_at_the_Brest_Fortress_01.jpg"
+   },
+   {
+    "src": "assets/img/curated/brest-3.jpg",
+    "caption": "Река Мухавец у крепости",
+    "credit": "Nakonana · CC BY-SA 4.0 · Wikimedia Commons",
+    "page": "https://commons.wikimedia.org/wiki/File:River_at_Brest_Fortress_01.jpg"
+   }
+  ],
+  "card": "assets/img/curated/brest-card.jpg"
+ },
+ {
+  "slug": "buinichi",
+  "title": "Буйничское поле",
+  "subtitle": "Место обороны Могилёва",
+  "region": "Могилёвская область",
+  "regionKey": "MogilevRegion",
+  "type": "Мемориал",
+  "typeKey": "memory",
+  "era": "1941 · мемориал",
+  "eraBucket": "soviet",
+  "coords": [
+   53.8602905,
+   30.254113
+  ],
+  "summary": "Поле под Могилёвом, где в июле 1941 года защитники города уничтожили 39 немецких танков. Сегодня здесь мемориал и музей бронетехники под открытым небом.",
+  "body": [
+   "Буйничское поле под Могилёвом — место одного из ключевых боёв обороны города в июле 1941 года. 12 июля 1941 года здесь шёл массированный штурм; защитники города уничтожили 39 немецких танков.",
+   "Бой на позиции 388-го стрелкового полка описали Константин Симонов и фотокорреспондент Павел Трошкин в очерке «Горячий день» для «Известий». Оборона Могилёва продолжалась 23 дня.",
+   "Сегодня мемориальный комплекс — музей бронетехники под открытым небом. Здесь есть арка, аллея, часовня с мемориальными досками, «Книга памяти» и экспозиция военной техники, включая немецкий танк T-III.",
+   "Одна из аллей названа в честь Константина Симонова и завершается камнем-валуном. Поле остаётся местом памяти о защитниках Могилёва и одним из самых узнаваемых военных мемориалов страны."
+  ],
+  "facts": [
+   [
+    "Где",
+    "Могилёвская область, Могилёвский район, у д. Буйничи"
+   ],
+   [
+    "Когда",
+    "12 июля 1941 · мемориал"
+   ],
+   [
+    "Статус",
+    "Историко-культурная ценность, мемориальный комплекс"
+   ]
+  ],
+  "sources": [
+   [
+    "Могилёвский горисполком",
+    "https://mogilev.gov.by/sections/sotsialnaya-sfera/sport-i-turizm/678-tur-potentsial-mogilev/680-attractions/memorialnyj-kompleks-bujnichskoe-pole-d-bujnichi/"
+   ]
+  ],
+  "catalog": "memaryialny-kompleks-buinitckae-pole-sa-zbudavanniami-i-pradmetami-uzbraennia-u-mezhakh-zgodna-dadatku",
+  "images": [
+   {
+    "src": "assets/img/curated/buinichi-hero.jpg",
+    "caption": "Место обороны Могилёва",
+    "credit": "Andrey Kukharenko from Gomel, Belarus · CC BY 2.0 · Wikimedia Commons",
+    "page": "https://commons.wikimedia.org/wiki/File:%D0%9C%D0%B5%D0%BC%D0%BE%D1%80%D0%B8%D0%B0%D0%BB%D1%8C%D0%BD%D1%8B%D0%B9_%D0%BA%D0%BE%D0%BC%D0%BF%D0%BB%D0%B5%D0%BA%D1%81_%C2%AB%D0%91%D1%83%D0%B9%D0%BD%D0%B8%D1%87%D1%81%D0%BA%D0%BE%D0%B5_%D0%BF%D0%BE%D0%BB%D0%B5%C2%BB,_%D0%B0%D0%B3._%D0%91%D1%83%D0%B9%D0%BD%D0%B8%D1%87%D0%B8,_%D0%9C%D0%BE%D0%B3%D0%B8%D0%BB%D1%91%D0%B2%D1%81%D0%BA%D0%B0%D1%8F_%D0%BE%D0%B1%D0%BB%D0%B0%D1%81%D1%82%D1%8C,_%D0%91%D0%B5%D0%BB%D0%B0%D1%80%D1%83%D1%81%D1%8C_DJI_0318-HDR_(51312294334).jpg"
+   },
+   {
+    "src": "assets/img/curated/buinichi-1.jpg",
+    "caption": "Мемориал с высоты",
+    "credit": "Andrey Kukharenko from Gomel, Belarus · CC BY 2.0 · Wikimedia Commons",
+    "page": "https://commons.wikimedia.org/wiki/File:%D0%9C%D0%B5%D0%BC%D0%BE%D1%80%D0%B8%D0%B0%D0%BB%D1%8C%D0%BD%D1%8B%D0%B9_%D0%BA%D0%BE%D0%BC%D0%BF%D0%BB%D0%B5%D0%BA%D1%81_%C2%AB%D0%91%D1%83%D0%B9%D0%BD%D0%B8%D1%87%D1%81%D0%BA%D0%BE%D0%B5_%D0%BF%D0%BE%D0%BB%D0%B5%C2%BB,_%D0%B0%D0%B3._%D0%91%D1%83%D0%B9%D0%BD%D0%B8%D1%87%D0%B8,_%D0%9C%D0%BE%D0%B3%D0%B8%D0%BB%D1%91%D0%B2%D1%81%D0%BA%D0%B0%D1%8F_%D0%BE%D0%B1%D0%BB%D0%B0%D1%81%D1%82%D1%8C,_%D0%91%D0%B5%D0%BB%D0%B0%D1%80%D1%83%D1%81%D1%8C_DJI_0328-HDR_(51310825372).jpg"
+   },
+   {
+    "src": "assets/img/curated/buinichi-2.jpg",
+    "caption": "Памятник на Буйничском поле",
+    "credit": "Сугакевіч А.Г. · CC BY-SA 3.0 · Wikimedia Commons",
+    "page": "https://commons.wikimedia.org/wiki/File:%D0%91%D1%83%D0%B9%D0%BD%D0%B8%D1%87%D1%81%D0%BA%D0%BE%D0%B5_%D0%BF%D0%BE%D0%BB%D0%B5_%D0%BF%D0%B0%D0%BC%D1%8F%D1%82%D0%BD%D0%B8%D0%BA.JPG"
+   }
+  ],
+  "card": "assets/img/curated/buinichi-card.jpg"
+ },
+ {
+  "slug": "trostenets",
+  "title": "Тростенец",
+  "subtitle": "Крупнейший лагерь смерти на территории СССР",
+  "region": "г. Минск",
+  "regionKey": "Minsk",
+  "type": "Мемориал",
+  "typeKey": "memory",
+  "era": "1942–1944 · мемориал с 2015",
+  "eraBucket": "soviet",
+  "coords": [
+   53.836105,
+   27.703887
+  ],
+  "summary": "Лагерь смерти под Минском, где с 1942 по 1944 год были убиты около 206 500 человек. Мемориальный комплекс открыт в 2015 году.",
+  "body": [
+   "Малый Тростенец под Минском — крупнейший лагерь смерти на оккупированной территории СССР. Он действовал с весны 1942 до лета 1944 года.",
+   "Здесь уничтожали мирных жителей, советских военнопленных, евреев из Беларуси, Австрии, Германии и Чехии, партизан и подпольщиков. По оценке Чрезвычайной государственной комиссии 1944 года, погибли около 206 500 человек.",
+   "В 2015 году на историческом месте открыли мемориальный комплекс. Центральная композиция — десятиметровые «Врата памяти» скульптора Константина Костюченко; рядом находится монумент «Массив имён».",
+   "Мемориал расположен на юго-восточной окраине Минска. Это место памяти европейского значения, куда приезжают потомки жертв из разных стран."
+  ],
+  "facts": [
+   [
+    "Где",
+    "г. Минск, юго-восточная окраина, урочище Тростенец"
+   ],
+   [
+    "Когда",
+    "1942–1944 · мемориал открыт в 2015"
+   ],
+   [
+    "Статус",
+    "Историко-культурная ценность, мемориальный комплекс"
+   ]
+  ],
+  "sources": [
+   [
+    "Выставка «Тростенец»",
+    "https://trostenez.org/ru/ausstellung/"
+   ],
+   [
+    "Минский горисполком",
+    "https://zav.minsk.gov.by/turizm/istoriko-kulturnye-tsennosti/22821-memorialnyj-kompleks-trostenets"
+   ],
+   [
+    "Государственный список",
+    "https://heritage.gov.by/be/catalog/terytoryia-byloga-lagera-smertci-trastcianetc"
+   ]
+  ],
+  "catalog": "terytoryia-byloga-lagera-smertci-trastcianetc",
+  "images": [
+   {
+    "src": "assets/img/curated/trostenets-hero.jpg",
+    "caption": "Крупнейший лагерь смерти на территории СССР",
+    "credit": "Aschroet · CC0 · Wikimedia Commons",
+    "page": "https://commons.wikimedia.org/wiki/File:Trascianiec_extermination_camp_67.jpg"
+   },
+   {
+    "src": "assets/img/curated/trostenets-1.jpg",
+    "caption": "Входная группа",
+    "credit": "Aschroet · CC0 · Wikimedia Commons",
+    "page": "https://commons.wikimedia.org/wiki/File:Trascianiec_extermination_camp_17.jpg"
+   },
+   {
+    "src": "assets/img/curated/trostenets-2.jpg",
+    "caption": "Стена памяти",
+    "credit": "Aschroet · CC0 · Wikimedia Commons",
+    "page": "https://commons.wikimedia.org/wiki/File:Trascianiec_extermination_camp_27.jpg"
+   },
+   {
+    "src": "assets/img/curated/trostenets-3.jpg",
+    "caption": "Карта лагеря",
+    "credit": "Aschroet · CC0 · Wikimedia Commons",
+    "page": "https://commons.wikimedia.org/wiki/File:Trascianiec_extermination_camp_52.jpg"
+   }
+  ],
+  "card": "assets/img/curated/trostenets-card.jpg"
+ },
+ {
+  "slug": "krasny-bereg",
+  "title": "Красный Берег",
+  "subtitle": "Мемориал «Детям — жертвам войны»",
+  "region": "Гомельская область",
+  "regionKey": "GomelRegion",
+  "type": "Мемориал",
+  "typeKey": "memory",
+  "era": "1941–1944 · мемориал с 2007",
+  "eraBucket": "soviet",
+  "coords": [
+   52.9525877,
+   29.7878944
+  ],
+  "summary": "Мемориал в Жлобинском районе, посвящённый детям, пострадавшим от нацистской политики. Здесь же работает музей «Детям войны».",
+  "body": [
+   "Красный Берег в Жлобинском районе — место памяти детей, пострадавших от нацистской политики. В годы войны здесь действовал сборно-пересыльный лагерь, через который детей вывозили на принудительные работы в Германию.",
+   "Мемориальный комплекс «Детям — жертвам войны» открыт 28 июня 2007 года. Его автор — архитектор Леонид Менделевич Левин, заслуженный архитектор Республики Беларусь.",
+   "Композиция задумана как «Город Солнца»: от центральной «Площади Солнца» расходятся лучи-аллеи, а чёрный «Луч Памяти» ведёт ко входу. В центре — фигура девочки, символизирующая детей, лишённых детства.",
+   "При мемориале работает музей «Детям войны». Его экспозиция рассказывает о довоенном детстве, оккупации, партизанском движении, лагере в Красном Береге и детях-остарбайтерах."
+  ],
+  "facts": [
+   [
+    "Где",
+    "Гомельская область, Жлобинский район, аг. Красный Берег"
+   ],
+   [
+    "Когда",
+    "28 июня 2007 · музей «Детям войны»"
+   ],
+   [
+    "Статус",
+    "Мемориальный комплекс, музей"
+   ]
+  ],
+  "sources": [
+   [
+    "Музей «Детям войны»",
+    "https://krbereg-memorial.museum.by/"
+   ]
+  ],
+  "catalog": null,
+  "images": [
+   {
+    "src": "assets/img/curated/krasny-bereg-hero.jpg",
+    "caption": "Мемориал «Детям — жертвам войны»",
+    "credit": "Стельмах Александр Николаевич (Алекс Сталь) · CC BY-SA 3.0 · Wikimedia Commons",
+    "page": "https://commons.wikimedia.org/wiki/File:%D0%9A%D1%80%D0%B0%D1%81%D0%BD%D1%8B%D0%B9_%D0%91%D0%B5%D1%80%D0%B5%D0%B3._%D0%9C%D0%B5%D0%BC%D0%BE%D1%80%D0%B8%D0%B0%D0%BB_%D0%B4%D0%B5%D1%82%D1%8F%D0%BC.jpg"
+   },
+   {
+    "src": "assets/img/curated/krasny-bereg-1.jpg",
+    "caption": "Белые столы с фотографиями детей",
+    "credit": "Фото: Музей «Детям войны» · krbereg-memorial.museum.by",
+    "page": ""
+   }
+  ],
+  "card": "assets/img/curated/krasny-bereg-card.jpg"
+ },
+ {
+  "slug": "ozarichi",
+  "title": "Озаричи",
+  "subtitle": "Мемориал узникам лагерей смерти",
+  "region": "Гомельская область",
+  "regionKey": "GomelRegion",
+  "type": "Мемориал",
+  "typeKey": "memory",
+  "era": "март 1944 · мемориал с 2004",
+  "eraBucket": "soviet",
+  "coords": [
+   52.485935,
+   29.218891
+  ],
+  "summary": "Три временных лагеря смерти, созданные в марте 1944 года. 18–19 марта Красная армия освободила более 33 тысяч человек.",
+  "body": [
+   "Озаричские лагеря смерти созданы в марте 1944 года около посёлка Озаричи, деревень Подосинник и Дерть. Под видом эвакуации сюда согнали более 50 тысяч мирных жителей из Гомельской, Могилёвской, Полесской, Смоленской и Орловской областей.",
+   "Лагеря представляли собой заболоченную территорию за колючей проволокой, без жилья и воды. Людей держали под открытым небом; каждый день от холода и голода умирали сотни человек. Нацисты рассчитывали вызвать эпидемию тифа и ослабить наступление Красной армии.",
+   "18–19 марта 1944 года войска 65-й армии 1-го Белорусского фронта освободили 33 480 человек, среди них 15 960 детей до 13 лет. Медикам удалось локализовать тиф.",
+   "Мемориал в Озаричах открыт в 2004 году, а в 2023–2024 годах реконструирован. Центральные элементы — «Камни прозрения» с архивными фотографиями узников, «Башня памяти» и стена скорби у болота."
+  ],
+  "facts": [
+   [
+    "Где",
+    "Гомельская область, Калинковичский район, г.п. Озаричи"
+   ],
+   [
+    "Когда",
+    "март 1944 · мемориал 2004, реконструкция 2023–2024"
+   ],
+   [
+    "Статус",
+    "Историко-культурная ценность, мемориальный комплекс"
+   ]
+  ],
+  "sources": [
+   [
+    "Мемориальный комплекс «Озаричи»",
+    "https://ozarichi-memorial.museum.by/"
+   ],
+   [
+    "Государственный список",
+    "https://heritage.gov.by/be/catalog/memaryialny-kompleks-viazniam-azarytckaga-lagera-smertci-370"
+   ]
+  ],
+  "catalog": "memaryialny-kompleks-viazniam-azarytckaga-lagera-smertci-370",
+  "images": [
+   {
+    "src": "assets/img/curated/ozarichi-hero.jpg",
+    "caption": "Мемориал узникам лагерей смерти",
+    "credit": "Zelyoniy.anton · CC BY-SA 3.0 · Wikimedia Commons",
+    "page": "https://commons.wikimedia.org/wiki/File:%D0%90%D0%B7%D0%B0%D1%80%D1%8B%D1%87%D1%8B._%D0%9C%D0%B5%D0%BC%D0%B0%D1%80%D1%8B%D1%8F%D0%BB_(07).jpg"
+   },
+   {
+    "src": "assets/img/curated/ozarichi-1.jpg",
+    "caption": "Памятный знак",
+    "credit": "Zelyoniy.anton · CC BY-SA 3.0 · Wikimedia Commons",
+    "page": "https://commons.wikimedia.org/wiki/File:%D0%90%D0%B7%D0%B0%D1%80%D1%8B%D1%87%D1%8B._%D0%9C%D0%B5%D0%BC%D0%B0%D1%80%D1%8B%D1%8F%D0%BB_(02).jpg"
+   },
+   {
+    "src": "assets/img/curated/ozarichi-2.jpg",
+    "caption": "Мемориальная композиция",
+    "credit": "Zelyoniy.anton · CC BY-SA 3.0 · Wikimedia Commons",
+    "page": "https://commons.wikimedia.org/wiki/File:%D0%90%D0%B7%D0%B0%D1%80%D1%8B%D1%87%D1%8B._%D0%9C%D0%B5%D0%BC%D0%B0%D1%80%D1%8B%D1%8F%D0%BB_(03).jpg"
+   },
+   {
+    "src": "assets/img/curated/ozarichi-3.jpg",
+    "caption": "Стела у болота",
+    "credit": "Zelyoniy.anton · CC BY-SA 3.0 · Wikimedia Commons",
+    "page": "https://commons.wikimedia.org/wiki/File:%D0%90%D0%B7%D0%B0%D1%80%D1%8B%D1%87%D1%8B._%D0%9C%D0%B5%D0%BC%D0%B0%D1%80%D1%8B%D1%8F%D0%BB_(09).jpg"
+   }
+  ],
+  "card": "assets/img/curated/ozarichi-card.jpg"
+ },
+ {
+  "slug": "dalva",
+  "title": "Дальва",
+  "subtitle": "Деревня, сожжённая за десять дней до освобождения",
+  "region": "Минская область",
+  "regionKey": "MinskRegion",
+  "type": "Мемориал",
+  "typeKey": "memory",
+  "era": "1944 · мемориал с 1975",
+  "eraBucket": "soviet",
+  "coords": [
+   54.53764,
+   27.948694
+  ],
+  "summary": "Деревня в Логойском районе, уничтоженная 19 июля 1944 года. В огне погибли 44 человека, в том числе 29 детей.",
+  "body": [
+   "Дальва — деревня в Логойском районе, уничтоженная 19 июля 1944 года, за десять дней до прихода Красной армии. В огне погибли 44 человека: 29 детей, 13 женщин и 2 мужчин.",
+   "Каратели окружили деревню, согнали жителей в дом и бросили внутрь гранату, а затем подожгли деревню с двух сторон. Самому старшему погибшему было 80 лет, самому младшему — 2 года.",
+   "Мемориал открыт в 1975 году. Его автор — скульптор Владимир Теребун, проект стал его дипломной работой. В композиции — скульптура матери с ребёнком, обгоревшие балки, Стена памяти с именами погибших и символические венцы срубов на месте домов.",
+   "В память о жертвах здесь посажены 44 берёзы. Дальва — часть мемориального комплекса «Хатынь» и одно из мест, где особенно остро ощущается цена мира."
+  ],
+  "facts": [
+   [
+    "Где",
+    "Минская область, Логойский район, 79-й км шоссе Минск — Витебск"
+   ],
+   [
+    "Когда",
+    "19 июля 1944 · мемориал открыт в 1975"
+   ],
+   [
+    "Статус",
+    "Историко-культурная ценность, мемориальный комплекс"
+   ]
+  ],
+  "sources": [
+   [
+    "Дальва на сайте «Хатыни»",
+    "https://khatyn.by/dalva/"
+   ],
+   [
+    "Государственный список",
+    "https://heritage.gov.by/be/catalog/memaryialny-kompleks-dalva-000235"
+   ]
+  ],
+  "catalog": "memaryialny-kompleks-dalva-000235",
+  "images": [
+   {
+    "src": "assets/img/curated/dalva-hero.jpg",
+    "caption": "Деревня, сожжённая за десять дней до освобождения",
+    "credit": "Aschroet · CC0 · Wikimedia Commons",
+    "page": "https://commons.wikimedia.org/wiki/File:Memorial_Complex_Dalva_10.jpg"
+   },
+   {
+    "src": "assets/img/curated/dalva-1.jpg",
+    "caption": "Мемориал «Дальва»",
+    "credit": "Aschroet · CC0 · Wikimedia Commons",
+    "page": "https://commons.wikimedia.org/wiki/File:Memorial_Complex_Dalva_11.jpg"
+   },
+   {
+    "src": "assets/img/curated/dalva-2.jpg",
+    "caption": "Фрагмент мемориала",
+    "credit": "Aschroet · CC0 · Wikimedia Commons",
+    "page": "https://commons.wikimedia.org/wiki/File:Memorial_Complex_Dalva_12.jpg"
+   },
+   {
+    "src": "assets/img/curated/dalva-3.jpg",
+    "caption": "Скульптура матери с ребёнком",
+    "credit": "Aschroet · CC0 · Wikimedia Commons",
+    "page": "https://commons.wikimedia.org/wiki/File:Memorial_Complex_Dalva_13.jpg"
+   }
+  ],
+  "card": "assets/img/curated/dalva-card.jpg"
+ },
+ {
+  "slug": "kurgan-slavy",
+  "title": "Курган Славы",
+  "subtitle": "Памятник освобождению Беларуси",
+  "region": "Минская область",
+  "regionKey": "MinskRegion",
+  "type": "Мемориал",
+  "typeKey": "memory",
+  "era": "1966–1969",
+  "eraBucket": "soviet",
+  "coords": [
+   54.019052,
+   27.898148
+  ],
+  "summary": "35-метровый курган на шоссе Минск — Москва, увенчанный четырьмя штыками-обелисками. Символ освобождения Беларуси в 1944 году.",
+  "body": [
+   "Курган Славы — мемориальный комплекс на 21-м километре шоссе Минск — Москва. Он посвящён освобождению Беларуси в 1944 году.",
+   "Курган высотой 35 метров увенчан четырьмя бетонными штыками-обелисками высотой 35,6 метра, облицованными титаном. Они символизируют четыре фронта, участвовавших в Белорусской операции.",
+   "Курган заложен 30 сентября 1966 года представителями городов-героев, воинских частей, трудящихся и учащихся Минска и Минской области. Открыт 5 июля 1969 года.",
+   "Авторы мемориала — скульптор Андрей Бембель, архитектор Аркадий Стахович и инженер Владимир Лапцевич. Сегодня это одно из самых посещаемых мест военной памяти в Беларуси."
+  ],
+  "facts": [
+   [
+    "Где",
+    "Минская область, Смолевичский район, 21-й км шоссе Минск — Москва"
+   ],
+   [
+    "Когда",
+    "заложен 30 сентября 1966 · открыт 5 июля 1969"
+   ],
+   [
+    "Статус",
+    "Историко-культурная ценность, мемориальный комплекс"
+   ]
+  ],
+  "sources": [
+   [
+    "Государственный список",
+    "https://heritage.gov.by/be/catalog/kurgan-slavy"
+   ]
+  ],
+  "catalog": "kurgan-slavy",
+  "images": [
+   {
+    "src": "assets/img/curated/kurgan-slavy-hero.jpg",
+    "caption": "Памятник освобождению Беларуси",
+    "credit": "Bahnfrend · CC BY-SA 4.0 · Wikimedia Commons",
+    "page": "https://commons.wikimedia.org/wiki/File:Mound_of_Glory,_2006_(05).jpg"
+   },
+   {
+    "src": "assets/img/curated/kurgan-slavy-1.jpg",
+    "caption": "Танк у подножия кургана",
+    "credit": "Bahnfrend · CC BY-SA 4.0 · Wikimedia Commons",
+    "page": "https://commons.wikimedia.org/wiki/File:Mound_of_Glory,_2006_(01).jpg"
+   },
+   {
+    "src": "assets/img/curated/kurgan-slavy-2.jpg",
+    "caption": "Мемориал и техника",
+    "credit": "Bahnfrend · CC BY-SA 4.0 · Wikimedia Commons",
+    "page": "https://commons.wikimedia.org/wiki/File:Mound_of_Glory,_2006_(02).jpg"
+   },
+   {
+    "src": "assets/img/curated/kurgan-slavy-3.jpg",
+    "caption": "Артиллерийское орудие",
+    "credit": "Anastasiya Lvova · CC BY-SA 3.0 · Wikimedia Commons",
+    "page": "https://commons.wikimedia.org/wiki/File:T-34-85_at_Mound_of_Glory_(machine-gun_left).jpg"
+   }
+  ],
+  "card": "assets/img/curated/kurgan-slavy-card.jpg"
+ },
+ {
+  "slug": "yama",
+  "title": "Яма",
+  "subtitle": "Мемориал жертвам Минского гетто",
+  "region": "г. Минск",
+  "regionKey": "Minsk",
+  "type": "Мемориал",
+  "typeKey": "memory",
+  "era": "1942 · мемориал с 1947",
+  "eraBucket": "soviet",
+  "coords": [
+   53.9097082,
+   27.5428293
+  ],
+  "summary": "Мемориал на месте массового расстрела узников Минского гетто 2 марта 1942 года. Один из первых памятников жертвам Холокоста на территории СССР.",
+  "body": [
+   "Мемориал «Яма» в Минске находится на улице Мельникайте, на месте бывшего еврейского гетто. 2 марта 1942 года здесь были убиты около пяти тысяч узников.",
+   "Первый обелиск появился на этом месте в 1947 году. Это был один из первых памятников жертвам Холокоста на территории СССР и первый, на котором разрешили надпись на идише.",
+   "В 2000 году в мемориале появилась скульптурная композиция «Последний путь» работы Леонида Левина — группа обречённых людей, спускающихся на дно ямы.",
+   "Мемориал остаётся местом памяти о трагедии Минского гетто и одной из точек маршрута по еврейской истории Беларуси."
+  ],
+  "facts": [
+   [
+    "Где",
+    "г. Минск, ул. Мельникайте"
+   ],
+   [
+    "Когда",
+    "2 марта 1942 · обелиск 1947 · скульптура 2000"
+   ],
+   [
+    "Статус",
+    "Мемориал, историко-культурная ценность"
+   ]
+  ],
+  "sources": [
+   [
+    "Администрация Центрального района Минска",
+    "https://centr.minsk.gov.by/sfery-deyatelnosti/sotsialnaya-sfera/obshchestvennye-formirovaniya/obshchestvennye-organizatsii/tsentralnaya-rajonnaya-organizatsiya-g-minska-roo-belaya-rus/arkhiv/6313-belarus-pomnit-memorialnyj-kompleks-yama"
+   ],
+   [
+    "Официальный портал Президента",
+    "https://president.gov.by/ru/events/uchastie-v-otkrytii-pamyatnika-zhertvam-holokosta-na-meste-minskogo-getto"
+   ]
+  ],
+  "catalog": null,
+  "images": [
+   {
+    "src": "assets/img/curated/yama-hero.jpg",
+    "caption": "Мемориал жертвам Минского гетто",
+    "credit": "Aschroet · CC0 · Wikimedia Commons",
+    "page": "https://commons.wikimedia.org/wiki/File:Yama_memorial_Minsk.jpg"
+   },
+   {
+    "src": "assets/img/curated/yama-1.jpg",
+    "caption": "Скульптура «Последний путь»",
+    "credit": "Aschroet · CC0 · Wikimedia Commons",
+    "page": "https://commons.wikimedia.org/wiki/File:Yama_memorial_Minsk_4.jpg"
+   },
+   {
+    "src": "assets/img/curated/yama-2.jpg",
+    "caption": "Мемориал «Яма»",
+    "credit": "Hanna Zelenko · CC BY-SA 4.0 · Wikimedia Commons",
+    "page": "https://commons.wikimedia.org/wiki/File:Belarus-Minsk-Memorial_Pit-1.jpg"
+   }
+  ],
+  "card": "assets/img/curated/yama-card.jpg"
+ },
+ {
+  "slug": "ola",
+  "title": "Ола",
+  "subtitle": "Мемориал сожжённой деревни",
+  "region": "Гомельская область",
+  "regionKey": "GomelRegion",
+  "type": "Мемориал",
+  "typeKey": "memory",
+  "era": "1944 · мемориал с 2020",
+  "eraBucket": "soviet",
+  "coords": [
+   52.739117,
+   29.6615727
+  ],
+  "summary": "Деревня в Светлогорском районе, сожжённая 14 января 1944 года. Погибли 1 758 мирных жителей, в том числе 950 детей.",
+  "body": [
+   "Ола — деревня в Светлогорском районе, известная с 1795 года. В годы войны её постигла судьба Хатыни.",
+   "Утром 14 января 1944 года немецкий карательный отряд вместе с войсковой частью около тысячи солдат окружил деревню. Людей загоняли в дома и поджигали; тех, кто пытался бежать, расстреливали. Погибли 1 758 мирных жителей, в том числе 950 детей.",
+   "После войны деревня не возродилась. В 1958 году на братской могиле установили памятник — скульптуру коленопреклонённого солдата с венком.",
+   "Мемориальный комплекс «Ола» открыт весной 2020 года. Он включает входную группу, мемориальную зону и пешеходный маршрут по бывшей деревенской улице; в центре — крест, колокол и звонница с колоколами по числу деревень, жители которых здесь погибли."
+  ],
+  "facts": [
+   [
+    "Где",
+    "Гомельская область, Светлогорский район, урочище Ола"
+   ],
+   [
+    "Когда",
+    "14 января 1944 · мемориал открыт в 2020"
+   ],
+   [
+    "Статус",
+    "Мемориальный комплекс"
+   ]
+  ],
+  "sources": [
+   [
+    "Мемориальный комплекс «Ола»",
+    "https://ola.museum.by/"
+   ]
+  ],
+  "catalog": null,
+  "images": [
+   {
+    "src": "assets/img/curated/ola-hero.jpg",
+    "caption": "Мемориал сожжённой деревни",
+    "credit": "Zelyoniy.anton · CC BY-SA 4.0 · Wikimedia Commons",
+    "page": "https://commons.wikimedia.org/wiki/File:Ala,_Svietlahorsk_District_(3).jpg"
+   },
+   {
+    "src": "assets/img/curated/ola-1.jpg",
+    "caption": "Мемориал вечером",
+    "credit": "Фото: Мемориальный комплекс «Ола» · ola.museum.by",
+    "page": ""
+   },
+   {
+    "src": "assets/img/curated/ola-2.jpg",
+    "caption": "Мемориальная зона",
+    "credit": "Zelyoniy.anton · CC BY-SA 4.0 · Wikimedia Commons",
+    "page": "https://commons.wikimedia.org/wiki/File:Ala,_Svietlahorsk_District_(4).jpg"
+   },
+   {
+    "src": "assets/img/curated/ola-3.jpg",
+    "caption": "Аллея мемориала",
+    "credit": "Zelyoniy.anton · CC BY-SA 4.0 · Wikimedia Commons",
+    "page": "https://commons.wikimedia.org/wiki/File:Ala,_Svietlahorsk_District_(2).jpg"
+   }
+  ],
+  "card": "assets/img/curated/ola-card.jpg"
+ },
+ {
+  "slug": "mir",
+  "title": "Мирский замок",
+  "subtitle": "Первый частный каменный замок ВКЛ",
+  "region": "Гродненская область",
+  "regionKey": "GrodnoRegion",
+  "type": "Замок",
+  "typeKey": "heritage",
+  "era": "XVI–XX вв.",
+  "coords": [
+   53.4511969,
+   26.4732817
+  ],
+  "summary": "Замок XVI века, соединивший готику и ренессанс. Входит в Список всемирного наследия ЮНЕСКО.",
+  "body": [
+   "Мир впервые упоминается в 1434 году. Замок начали строить в 1520-х годах при Юрии Ильиниче; это был первый частный каменный замок в Великом княжестве Литовском.",
+   "В конце XVI века при Николае Христофоре Радзивилле «Сиротке» замок перестроили в ренессансную резиденцию: появились трёхэтажный дворец, новые перекрытия и башни, вокруг насыпали валы и устроили пруды.",
+   "Замок пережил войны и разрушения, но сохранил планировку и объём. В XX веке здесь провели реставрацию, а в 2000 году комплекс включили в Список всемирного наследия ЮНЕСКО.",
+   "Сегодня в замке работает музей. В комплекс входят дворец, башни, оборонительные валы, пейзажный парк, пруд и часовня-усыпальница Святополк-Мирских."
+  ],
+  "facts": [
+   [
+    "Где",
+    "Гродненская область, Кореличский район, г.п. Мир"
+   ],
+   [
+    "Когда",
+    "XVI–XX вв. · музей"
+   ],
+   [
+    "Статус",
+    "Всемирное наследие ЮНЕСКО"
+   ]
+  ],
+  "sources": [
+   [
+    "История Мирского замка",
+    "https://mirzamak.by/historical-periods"
+   ],
+   [
+    "Государственный список",
+    "https://heritage.gov.by/be/catalog/zamkavy-kompleks-mir"
+   ]
+  ],
+  "catalog": "zamkavy-kompleks-mir",
+  "images": [
+   {
+    "src": "assets/img/curated/mir-hero.jpg",
+    "caption": "Первый частный каменный замок ВКЛ",
+    "credit": "Alexxx1979 · CC BY-SA 4.0 · Wikimedia Commons",
+    "page": "https://commons.wikimedia.org/wiki/File:Belarus_Mir_Mir_Castle_Complex_8094_2075.jpg"
+   },
+   {
+    "src": "assets/img/curated/mir-1.jpg",
+    "caption": "Мирский замок",
+    "credit": "Alexxx1979 · CC BY-SA 4.0 · Wikimedia Commons",
+    "page": "https://commons.wikimedia.org/wiki/File:Belarus_Mir_Mir_Castle_Complex_8101_2085.jpg"
+   },
+   {
+    "src": "assets/img/curated/mir-2.jpg",
+    "caption": "Замок с озера",
+    "credit": "Mike1979 Russia · CC BY-SA 3.0 · Wikimedia Commons",
+    "page": "https://commons.wikimedia.org/wiki/File:Mir_Castle_2023-07-02_5836.jpg"
+   },
+   {
+    "src": "assets/img/curated/mir-3.jpg",
+    "caption": "Стены замка",
+    "credit": "Mike1979 Russia · CC BY-SA 3.0 · Wikimedia Commons",
+    "page": "https://commons.wikimedia.org/wiki/File:Mir_Castle_2023-07-02_6017.jpg"
+   }
+  ],
+  "card": "assets/img/curated/mir-card.jpg"
+ },
+ {
+  "slug": "nesvizh",
+  "title": "Несвижский замок",
+  "subtitle": "Резиденция Радзивиллов",
+  "region": "Минская область",
+  "regionKey": "MinskRegion",
+  "type": "Замок",
+  "typeKey": "heritage",
+  "era": "XVI–XIX вв.",
+  "eraBucket": "former",
+  "coords": [
+   53.2227898,
+   26.6918112
+  ],
+  "summary": "Дворцово-замковый комплекс Радзивиллов, один из четырёх объектов Беларуси в Списке всемирного наследия ЮНЕСКО.",
+  "body": [
+   "Несвиж принадлежал Радзивиллам с 1513 года. В конце XVI века Николай Христофор Радзивилл «Сиротка» начал строить каменный замок на полуострове между двумя озёрами.",
+   "Замок стал одной из лучших крепостей Великого княжества Литовского: четырёхугольник с бастионами, рвом и водой, дворец, арсенал, каменица с дозорной башней. В 1660 году крепость выдержала двухмесячную осаду.",
+   "В 1706 году шведы разграбили замок и уничтожили укрепления. В 1720-е годы резиденцию восстановили; дворец, арсенал и каменицу соединили галереями. В 2005 году комплекс включили в Список всемирного наследия ЮНЕСКО.",
+   "С 1993 года здесь работает музей-заповедник «Несвиж». После реставрации в 2012 году для посетителей открыли обновлённую экспозицию дворца."
+  ],
+  "facts": [
+   [
+    "Где",
+    "Минская область, Несвижский район, г. Несвиж, ул. Замковая, 2"
+   ],
+   [
+    "Когда",
+    "XVI–XIX вв. · музей-заповедник с 1993"
+   ],
+   [
+    "Статус",
+    "Всемирное наследие ЮНЕСКО"
+   ]
+  ],
+  "sources": [
+   [
+    "История дворцового комплекса",
+    "https://niasvizh.by/history/dvortsovyy_kompleks/"
+   ],
+   [
+    "Государственный список",
+    "https://heritage.gov.by/be/catalog/palatcava-parkavy-ansambl-zamak-palatc-paudnevaia-i-uskhodniaia-galerei-kamianitca-arsenal-z-kaplitcai-brama-dva-prybramnyia-karpusy-paunochna-uskhodniaia-i-paudneva-zakhodniaia-galerei-liadounia-stainia-abaronchyia-zbudavanni-i-most"
+   ]
+  ],
+  "catalog": "palatcava-parkavy-ansambl-zamak-palatc-paudnevaia-i-uskhodniaia-galerei-kamianitca-arsenal-z-kaplitcai-brama-dva-prybramnyia-karpusy-paunochna-uskhodniaia-i-paudneva-zakhodniaia-galerei-liadounia-stainia-abaronchyia-zbudavanni-i-most",
+  "images": [
+   {
+    "src": "assets/img/curated/nesvizh-hero.jpg",
+    "caption": "Резиденция Радзивиллов",
+    "credit": "Alexxx1979 · CC BY-SA 4.0 · Wikimedia Commons",
+    "page": "https://commons.wikimedia.org/wiki/File:Belarus_Nesvizh_Castle_7259_2050.jpg"
+   },
+   {
+    "src": "assets/img/curated/nesvizh-1.jpg",
+    "caption": "Дворец и парк",
+    "credit": "Alexxx1979 · CC BY-SA 4.0 · Wikimedia Commons",
+    "page": "https://commons.wikimedia.org/wiki/File:Belarus_Nesvizh_Castle_7625_2050.jpg"
+   },
+   {
+    "src": "assets/img/curated/nesvizh-2.jpg",
+    "caption": "Замок над прудом",
+    "credit": "Alexxx1979 · CC BY-SA 4.0 · Wikimedia Commons",
+    "page": "https://commons.wikimedia.org/wiki/File:Belarus_Nesvizh_Castle_pond_7308_2050.jpg"
+   },
+   {
+    "src": "assets/img/curated/nesvizh-3.jpg",
+    "caption": "Несвижский замок осенью",
+    "credit": "Svetlana Besp · CC BY-SA 4.0 · Wikimedia Commons",
+    "page": "https://commons.wikimedia.org/wiki/File:Nesvizh_castle_in_autumn.jpg"
+   }
+  ],
+  "card": "assets/img/curated/nesvizh-card.jpg"
+ },
+ {
+  "slug": "sophia",
+  "title": "Софийский собор",
+  "subtitle": "Символ Полоцка",
+  "region": "Витебская область",
+  "regionKey": "VitebskRegion",
+  "type": "Собор",
+  "typeKey": "heritage",
+  "era": "1044–1066 · XVIII в.",
+  "eraBucket": "former",
+  "coords": [
+   55.4862762,
+   28.7585874
+  ],
+  "summary": "Один из древнейших храмов Беларуси, построенный при Всеславе Брячиславиче. Сегодня — музей и концертный зал.",
+  "body": [
+   "Софийский собор в Полоцке построен между 1044 и 1066 годами по заказу князя Всеслава Брячиславича. Он стоял в центре древнего детинца на Верхнем замке.",
+   "Собор был символом Полоцка: здесь принимали послов, объявляли войну и мир, хранили казну, библиотеку и архив. Первоначально это был крестово-купольный храм с семью куполами.",
+   "Собор не раз разрушали и перестраивали. В конце XV — начале XVI века он стал пятибашенным храмом оборонительного типа, а в 1738–1750 годах был перестроен в стиле виленского барокко архитектором Иоганном Глаубицем.",
+   "От древнего храма сохранились трёхчастная апсида, фрагменты стен и склеп. Сегодня здесь работает музей истории архитектуры Софийского собора и концертный зал."
+  ],
+  "facts": [
+   [
+    "Где",
+    "Витебская область, г. Полоцк, ул. Замковая, 1"
+   ],
+   [
+    "Когда",
+    "1044–1066 · перестройка 1738–1750"
+   ],
+   [
+    "Статус",
+    "Историко-культурная ценность, музей"
+   ]
+  ],
+  "sources": [
+   [
+    "Государственный список",
+    "https://heritage.gov.by/be/catalog/safiiski-sabor"
+   ]
+  ],
+  "catalog": "safiiski-sabor",
+  "images": [
+   {
+    "src": "assets/img/curated/sophia-hero.jpg",
+    "caption": "Символ Полоцка",
+    "credit": "Vasilii Martynov · CC BY 4.0 · Wikimedia Commons",
+    "page": "https://commons.wikimedia.org/wiki/File:Modern_photos_of_Cathedral_of_Saint_Sophia_in_Polotsk.jpg"
+   },
+   {
+    "src": "assets/img/curated/sophia-1.jpg",
+    "caption": "Собор с реки",
+    "credit": "Jurasikt · CC BY 3.0 · Wikimedia Commons",
+    "page": "https://commons.wikimedia.org/wiki/File:BELARUS_-_POLOTSK_(%D0%9F%D0%BE%D0%BB%D0%B0%D1%86%D0%BA)._St_Sophia_cathedral..jpg"
+   },
+   {
+    "src": "assets/img/curated/sophia-2.jpg",
+    "caption": "Софийский собор",
+    "credit": "Jurasikt · CC BY 3.0 · Wikimedia Commons",
+    "page": "https://commons.wikimedia.org/wiki/File:BELARUS_-_POLOTSK._St_Sophia_%D1%81athedral_(XI-XVIII_century)..jpg"
+   }
+  ],
+  "card": "assets/img/curated/sophia-card.jpg"
+ },
+ {
+  "slug": "kolozha",
+  "title": "Коложская церковь",
+  "subtitle": "Храм XII века на Немане",
+  "region": "Гродненская область",
+  "regionKey": "GrodnoRegion",
+  "type": "Церковь",
+  "typeKey": "heritage",
+  "era": "1180-е",
+  "eraBucket": "former",
+  "coords": [
+   53.6784264,
+   23.8186308
+  ],
+  "summary": "Борисоглебская (Коложская) церковь — один из древнейших сохранившихся храмов Беларуси, памятник гродненской архитектурной школы.",
+  "body": [
+   "Борисоглебская (Коложская) церковь стоит на правом берегу Немана в Гродно, недалеко от устья Городничанки. Она построена в 1180-х годах и относится к гродненской архитектурной школе.",
+   "Для строительства использовали плинфу, голосники, обработанный камень и цемянку. Фасады и пол украшали майоликовые плитки; стены были расписаны фресками, от которых сохранился небольшой фрагмент.",
+   "Церковь входит в число древнейших сохранившихся храмов Беларуси и является объектом Государственного списка историко-культурных ценностей.",
+   "Сегодня это действующий храм и один из главных символов Гродно. Рядом находятся Старый замок и набережная Немана."
+  ],
+  "facts": [
+   [
+    "Где",
+    "Гродненская область, г. Гродно, ул. Каложа, 8"
+   ],
+   [
+    "Когда",
+    "1180-е"
+   ],
+   [
+    "Статус",
+    "Историко-культурная ценность, действующий храм"
+   ]
+  ],
+  "sources": [
+   [
+    "Государственный список",
+    "https://heritage.gov.by/be/catalog/barysaglebskaia-kalozhskaia-tcarkva-dekaratyunae-azdablenne-tcarkvy-kamenny-i-maelikavy-dekor-na-fasadakh-fragment-arnamentalnaga-dekoru-padlogi-fragmenty-zhyvapisu-u-inter-ery-004"
+   ]
+  ],
+  "catalog": "barysaglebskaia-kalozhskaia-tcarkva-dekaratyunae-azdablenne-tcarkvy-kamenny-i-maelikavy-dekor-na-fasadakh-fragment-arnamentalnaga-dekoru-padlogi-fragmenty-zhyvapisu-u-inter-ery-004",
+  "images": [
+   {
+    "src": "assets/img/curated/kolozha-hero.jpg",
+    "caption": "Храм XII века на Немане",
+    "credit": "Mike1979 Russia · CC BY-SA 3.0 · Wikimedia Commons",
+    "page": "https://commons.wikimedia.org/wiki/File:Hrodna_Kalo%C5%BEa_Church_2023-06-25_5628.jpg"
+   },
+   {
+    "src": "assets/img/curated/kolozha-1.jpg",
+    "caption": "Церковь на берегу Немана",
+    "credit": "Mike1979 Russia · CC BY-SA 3.0 · Wikimedia Commons",
+    "page": "https://commons.wikimedia.org/wiki/File:Hrodna_Kalo%C5%BEa_Church_2023-06-25_5632.jpg"
+   },
+   {
+    "src": "assets/img/curated/kolozha-2.jpg",
+    "caption": "Коложская церковь",
+    "credit": "DBatura · CC0 · Wikimedia Commons",
+    "page": "https://commons.wikimedia.org/wiki/File:%D0%9A%D0%B0%D0%BB%D0%BE%D0%B6%D1%81%D0%BA%D0%B0%D1%8F_%D1%86%D0%B0%D1%80%D0%BA%D0%B2%D0%B0_2024.jpg"
+   }
+  ],
+  "card": "assets/img/curated/kolozha-card.jpg"
+ },
+ {
+  "slug": "kamenets",
+  "title": "Каменецкая вежа",
+  "subtitle": "Волынская башня XIII века",
+  "region": "Брестская область",
+  "regionKey": "BrestRegion",
+  "type": "Башня",
+  "typeKey": "heritage",
+  "era": "вторая половина XIII в.",
+  "eraBucket": "former",
+  "coords": [
+   52.4047614,
+   23.8194572
+  ],
+  "summary": "Единственная сохранившаяся волынская башня на западных землях, построенная в XIII–XIV веках. Высота — 29,4 метра.",
+  "body": [
+   "Каменецкая вежа — памятник оборонительного зодчества второй половины XIII века. Она построена на высоком холме левого берега реки Лесной.",
+   "Это единственная сохранившаяся волынская башня, возведённая на западных землях в XIII–XIV веках. Вежа стояла внутри кольцевого вала и господствовала над деревянными укреплениями.",
+   "Высота пятиярусной башни — 29,4 метра, толщина стен — 2,5 метра, внешний диаметр — 13,6 метра. Она стоит на мощном каменном фундаменте.",
+   "Сегодня это музей и одна из главных достопримечательностей Каменца. С башни открывается вид на город и окрестности."
+  ],
+  "facts": [
+   [
+    "Где",
+    "Брестская область, Каменецкий район, г. Каменец, ул. Ленина, 3А"
+   ],
+   [
+    "Когда",
+    "вторая половина XIII в."
+   ],
+   [
+    "Статус",
+    "Историко-культурная ценность, музей"
+   ]
+  ],
+  "sources": [
+   [
+    "Государственный список",
+    "https://heritage.gov.by/be/catalog/kamianetckaia-vezha"
+   ]
+  ],
+  "catalog": "kamianetckaia-vezha",
+  "images": [
+   {
+    "src": "assets/img/curated/kamenets-hero.jpg",
+    "caption": "Волынская башня XIII века",
+    "credit": "Андрей Осташеня · CC BY-SA 4.0 · Wikimedia Commons",
+    "page": "https://commons.wikimedia.org/wiki/File:HPIMMuseum_Kamenets_tower-28-07-2007_4.jpg"
+   },
+   {
+    "src": "assets/img/curated/kamenets-1.jpg",
+    "caption": "Башня с высоты",
+    "credit": "Андрей Осташеня · CC BY-SA 4.0 · Wikimedia Commons",
+    "page": "https://commons.wikimedia.org/wiki/File:Museum_Kamenets_tower-28-07-2007_1.jpg"
+   }
+  ],
+  "card": "assets/img/curated/kamenets-card.jpg"
+ },
+ {
+  "slug": "lida",
+  "title": "Лидский замок",
+  "subtitle": "Замок Гедимина",
+  "region": "Гродненская область",
+  "regionKey": "GrodnoRegion",
+  "type": "Замок",
+  "typeKey": "heritage",
+  "era": "первая половина XIV в.",
+  "eraBucket": "former",
+  "coords": [
+   53.8871579,
+   25.3034829
+  ],
+  "summary": "Каменный замок, построенный по приказу великого князя Гедимина в первой половине XIV века. Сегодня — музей и одна из главных достопримечательностей Лиды.",
+  "body": [
+   "Каменный замок в Лиде построен по приказу великого князя литовского Гедимина в первой половине XIV века. Работы велись 5–7 лет.",
+   "Замок возвели из полевого камня и кирпича. Толщина стен внизу — 2 метра, вверху — 1,5 метра; на южной и восточной стенах были кирпичные данскеры. Сначала в замке была одна башня, в начале XV века построили вторую.",
+   "В XVII веке замок пережил войны, а в начале XVIII века шведы взорвали обе башни. В 1794 году в руинах замка шёл бой повстанцев Тадеуша Костюшко.",
+   "В XX веке замок законсервировали и отреставрировали. Сегодня это объект Лидского историко-художественного музея; в башнях работают экспозиции."
+  ],
+  "facts": [
+   [
+    "Где",
+    "Гродненская область, г. Лида, ул. Замковая"
+   ],
+   [
+    "Когда",
+    "первая половина XIV в."
+   ],
+   [
+    "Статус",
+    "Историко-культурная ценность, музей"
+   ]
+  ],
+  "sources": [
+   [
+    "Государственный список",
+    "https://heritage.gov.by/be/catalog/zamak-328"
+   ],
+   [
+    "Лидский историко-художественный музей",
+    "https://lida.museum.by/"
+   ]
+  ],
+  "catalog": "zamak-328",
+  "images": [
+   {
+    "src": "assets/img/curated/lida-hero.jpg",
+    "caption": "Замок Гедимина",
+    "credit": "Alexxx1979 · CC BY-SA 4.0 · Wikimedia Commons",
+    "page": "https://commons.wikimedia.org/wiki/File:Belarus_Lida_Castle_IMG_1570_2175.jpg"
+   },
+   {
+    "src": "assets/img/curated/lida-1.jpg",
+    "caption": "Стены замка",
+    "credit": "SargoStranik · CC BY-SA 4.0 · Wikimedia Commons",
+    "page": "https://commons.wikimedia.org/wiki/File:Lida_Castle_135772587414xxl.jpg"
+   },
+   {
+    "src": "assets/img/curated/lida-2.jpg",
+    "caption": "Замок и двор",
+    "credit": "Zala · CC BY-SA 4.0 · Wikimedia Commons",
+    "page": "https://commons.wikimedia.org/wiki/File:Lida_zamek_01.jpg"
+   }
+  ],
+  "card": "assets/img/curated/lida-card.jpg"
+ },
+ {
+  "slug": "novogrudok",
+  "title": "Новогрудский замок",
+  "subtitle": "Замок на Замковой горе",
+  "region": "Гродненская область",
+  "regionKey": "GrodnoRegion",
+  "type": "Замок",
+  "typeKey": "heritage",
+  "era": "XIII–XVI вв.",
+  "eraBucket": "former",
+  "coords": [
+   53.6013222,
+   25.8277544
+  ],
+  "summary": "Руины средневекового замка на Замковой горе — одного из самых мощных в Беларуси в XVI веке.",
+  "body": [
+   "Новогрудский замок — памятник оборонительного зодчества эпохи Средневековья. Он расположен на Замковой горе высотой около 20 метров.",
+   "Во второй половине XIII века здесь построили каменную башню, которую в конце XIV века перестроили из кирпича. Она вошла в историю как Щитовка. В XVI веке замок имел семь башен и был одним из самых мощных в Беларуси.",
+   "Войны XVII века и Северная война разрушили укрепления. В 1906 году рухнула Костёльная башня. В 1920–1930-е годы уцелевшие руины законсервировали.",
+   "Сегодня это музей под открытым небом и одна из главных достопримечательностей Новогрудка. С Замковой горы открывается панорама города."
+  ],
+  "facts": [
+   [
+    "Где",
+    "Гродненская область, г. Новогрудок, ул. Малый Замок"
+   ],
+   [
+    "Когда",
+    "XIII–XVI вв."
+   ],
+   [
+    "Статус",
+    "Историко-культурная ценность, музей"
+   ]
+  ],
+  "sources": [
+   [
+    "Государственный список",
+    "https://heritage.gov.by/be/catalog/reshtki-zamka-404"
+   ],
+   [
+    "Новогрудский музей",
+    "https://novogrudok.museum.by/"
+   ]
+  ],
+  "catalog": "reshtki-zamka-404",
+  "images": [
+   {
+    "src": "assets/img/curated/novogrudok-hero.jpg",
+    "caption": "Замок на Замковой горе",
+    "credit": "dazhetak · CC BY 2.0 · Wikimedia Commons",
+    "page": "https://commons.wikimedia.org/wiki/File:Castle._Morning_(30953440540).jpg"
+   },
+   {
+    "src": "assets/img/curated/novogrudok-1.jpg",
+    "caption": "Руины замка",
+    "credit": "Igor Mostitsky / Игорь Мостицкий · Public domain · Wikimedia Commons",
+    "page": "https://commons.wikimedia.org/wiki/File:Novogrudok_ruin.jpg"
+   },
+   {
+    "src": "assets/img/curated/novogrudok-2.jpg",
+    "caption": "Замковая гора",
+    "credit": "sandexx · CC BY 3.0 · Wikimedia Commons",
+    "page": "https://commons.wikimedia.org/wiki/File:The_ruins_of_the_castle_in_Novogrudok,_Belarus_-_panoramio.jpg"
+   }
+  ],
+  "card": "assets/img/curated/novogrudok-card.jpg"
+ },
+ {
+  "slug": "gomel",
+  "title": "Гомельский дворец",
+  "subtitle": "Дворцово-парковый ансамбль Румянцевых и Паскевичей",
+  "region": "Гомельская область",
+  "regionKey": "GomelRegion",
+  "type": "Дворец",
+  "typeKey": "heritage",
+  "era": "конец XVIII — середина XIX в.",
+  "eraBucket": "former",
+  "coords": [
+   52.422281,
+   31.0169086
+  ],
+  "summary": "Один из самых интересных памятников усадебной архитектуры Беларуси, соединивший классицизм и эклектику.",
+  "body": [
+   "Гомельский дворец — один из самых интересных памятников усадебной архитектуры конца XVIII — середины XIX века в Беларуси. Он отличается богатством и пластичностью, сочетанием классицизма и эклектики.",
+   "Дворец связан с родами Румянцевых и Паскевичей. Для участия в строительстве приглашали архитекторов и декораторов из России, Польши, Англии и Италии, а также местных мастеров.",
+   "Архитектура дворца тесно связана с окружающим ландшафтом. В комплекс входят парк, Петропавловский собор, часовня-усыпальница Паскевичей и хозяйственные постройки.",
+   "Сегодня это один из главных музеев Гомеля и точка притяжения на набережной Сожа. Дворец и парк остаются визитной карточкой города."
+  ],
+  "facts": [
+   [
+    "Где",
+    "Гомельская область, г. Гомель, пл. Ленина, 6"
+   ],
+   [
+    "Когда",
+    "конец XVIII — середина XIX в."
+   ],
+   [
+    "Статус",
+    "Историко-культурная ценность, музей"
+   ]
+  ],
+  "sources": [
+   [
+    "Государственный список",
+    "https://heritage.gov.by/be/catalog/palatcava-parkavy-ansambl-palatc-44_1"
+   ]
+  ],
+  "catalog": "palatcava-parkavy-ansambl-palatc-44_1",
+  "images": [
+   {
+    "src": "assets/img/curated/gomel-hero.jpg",
+    "caption": "Дворцово-парковый ансамбль Румянцевых и Паскевичей",
+    "credit": "Alex Zelenko · CC BY-SA 4.0 · Wikimedia Commons",
+    "page": "https://commons.wikimedia.org/wiki/File:Belarus-Homel-Palace_of_Pashkevichs-10.jpg"
+   },
+   {
+    "src": "assets/img/curated/gomel-1.jpg",
+    "caption": "Дворец и парк",
+    "credit": "Alex Zelenko · CC BY-SA 4.0 · Wikimedia Commons",
+    "page": "https://commons.wikimedia.org/wiki/File:Belarus-Homel-Palace_of_Pashkevichs-11.jpg"
+   },
+   {
+    "src": "assets/img/curated/gomel-2.jpg",
+    "caption": "Дворец Румянцевых и Паскевичей",
+    "credit": "Andreenko99 · CC BY-SA 4.0 · Wikimedia Commons",
+    "page": "https://commons.wikimedia.org/wiki/File:Palace_of_the_Rumyantsevs_and_the_Paskeviches_in_Gomel.jpg"
+   }
+  ],
+  "card": "assets/img/curated/gomel-card.jpg"
+ },
+ {
+  "slug": "ruzhany",
+  "title": "Ружанский дворец",
+  "subtitle": "«Белорусский Версаль»",
+  "region": "Брестская область",
+  "regionKey": "BrestRegion",
+  "type": "Дворец",
+  "typeKey": "heritage",
+  "era": "конец XVI — XVIII в.",
+  "eraBucket": "former",
+  "coords": [
+   52.8606605,
+   24.8959426
+  ],
+  "summary": "Руины дворца рода Сапегов, который называли «Белорусским Версалем». Часть комплекса отреставрирована, здесь работает музей.",
+  "body": [
+   "Ружанский дворец — памятник архитектуры XVIII века в стиле позднего классицизма. Его называют «Белорусским Версалем»: он был построен по подобию знаменитой резиденции французских королей.",
+   "Дворец был главной резиденцией рода Сапегов. Комплекс сохранился в руинированном состоянии: уцелели фасадная стена ризалита, стены правого крыла, левое крыло и въездная брама.",
+   "В начале 2011 года открылся музей «Ружанский дворцовый комплекс Сапегов». Отреставрированы два флигеля и въездные ворота; для посетителей работают четыре экспозиционных и один выставочный зал.",
+   "Экспозиции посвящены замковому и дворцовому периодам, истории Ружаны и роду Сапегов. Здесь же проходят театрализованные исторические реконструкции."
+  ],
+  "facts": [
+   [
+    "Где",
+    "Брестская область, Пружанский район, г.п. Ружаны, ул. Урбановича"
+   ],
+   [
+    "Когда",
+    "конец XVI — XVIII в. · музей с 2011"
+   ],
+   [
+    "Статус",
+    "Историко-культурная ценность, музей"
+   ]
+  ],
+  "sources": [
+   [
+    "Ружанский дворцовый комплекс",
+    "https://ruzhany.museum.by/"
+   ],
+   [
+    "Государственный список",
+    "https://heritage.gov.by/be/catalog/ruzhanski-palatcavy-kompleks-sapegau-fragmenty-galounaga-i-uskhodniaga-karpusou-arkady-uiaznaia-brama-fligeli"
+   ]
+  ],
+  "catalog": "ruzhanski-palatcavy-kompleks-sapegau-fragmenty-galounaga-i-uskhodniaga-karpusou-arkady-uiaznaia-brama-fligeli",
+  "images": [
+   {
+    "src": "assets/img/curated/ruzhany-hero.jpg",
+    "caption": "«Белорусский Версаль»",
+    "credit": "Zala · CC BY-SA 4.0 · Wikimedia Commons",
+    "page": "https://commons.wikimedia.org/wiki/File:R%C3%B3%C5%BCana_Pa%C5%82ac_Sapieh%C3%B3w_19.jpg"
+   },
+   {
+    "src": "assets/img/curated/ruzhany-1.jpg",
+    "caption": "Руины дворца",
+    "credit": "Tatiana Matlina · CC BY-SA 4.0 · Wikimedia Commons",
+    "page": "https://commons.wikimedia.org/wiki/File:Ruins_of_Ruzhany_Palace_Brest_region_Belarus.jpg"
+   },
+   {
+    "src": "assets/img/curated/ruzhany-2.jpg",
+    "caption": "Фрагмент дворца",
+    "credit": "Zala · CC BY-SA 4.0 · Wikimedia Commons",
+    "page": "https://commons.wikimedia.org/wiki/File:R%C3%B3%C5%BCana_Pa%C5%82ac_Sapieh%C3%B3w_20.jpg"
+   }
+  ],
+  "card": "assets/img/curated/ruzhany-card.jpg"
+ },
+ {
+  "slug": "bobruisk",
+  "title": "Бобруйская крепость",
+  "subtitle": "Фортификационный памятник XIX века",
+  "region": "Могилёвская область",
+  "regionKey": "MogilevRegion",
+  "type": "Крепость",
+  "typeKey": "heritage",
+  "era": "первая половина XIX в.",
+  "eraBucket": "former",
+  "coords": [
+   53.1369428,
+   29.2441699
+  ],
+  "summary": "Памятник фортификационного искусства первой половины XIX века на берегу Березины. Сохранились казематы, редуты, люнет и фрагменты укреплений.",
+  "body": [
+   "Бобруйская крепость — памятник фортификационного искусства первой половины XIX века. При её проектировании и строительстве использовали самые современные для того времени военно-инженерные идеи.",
+   "Долговременные оборонительные сооружения выполнены из кирпича, имеют сводчатые перекрытия, амбразуры, бойницы и вентиляционные отверстия. В люнете на берегу Березины сохранились лестницы, кирпичный пол «ёлочкой», деревянные ворота и чугунные крюки для установки пушек.",
+   "В редутах сохранились лестницы, а в горжевом редуте 5-го полигона — дозорная башня. Важно сохранить контрминные галереи, капониры и остатки бастионов, равелинов и земляных сооружений.",
+   "Крепость является и памятником градостроительного искусства: в оформлении казарм и офицерских домов использованы элементы классицизма (архитектор А. Штауберт). Сегодня это один из символов Бобруйска."
+  ],
+  "facts": [
+   [
+    "Где",
+    "Могилёвская область, г. Бобруйск, ул. Крупской, правый берег Березины"
+   ],
+   [
+    "Когда",
+    "первая половина XIX в."
+   ],
+   [
+    "Статус",
+    "Историко-культурная ценность"
+   ]
+  ],
+  "sources": [
+   [
+    "Государственный список",
+    "https://heritage.gov.by/be/catalog/krepastc"
+   ]
+  ],
+  "catalog": "krepastc",
+  "images": [
+   {
+    "src": "assets/img/curated/bobruisk-hero.jpg",
+    "caption": "Фортификационный памятник XIX века",
+    "credit": "madmoon · CC BY-SA 3.0 · Wikimedia Commons",
+    "page": "https://commons.wikimedia.org/wiki/File:Foertress_in_Bobruisk.jpg"
+   },
+   {
+    "src": "assets/img/curated/bobruisk-1.jpg",
+    "caption": "Бобруйская крепость",
+    "credit": "madmoon · CC BY-SA 3.0 · Wikimedia Commons",
+    "page": "https://commons.wikimedia.org/wiki/File:Bobruisk_fortress.jpg"
+   },
+   {
+    "src": "assets/img/curated/bobruisk-2.jpg",
+    "caption": "План крепости",
+    "credit": "Unknown authorUnknown author · Public domain · Wikimedia Commons",
+    "page": "https://commons.wikimedia.org/wiki/File:AFRE_Bobruisk.jpg"
+   }
+  ],
+  "card": "assets/img/curated/bobruisk-card.jpg"
+ },
+ {
+  "slug": "vasilishki",
+  "title": "Василишки",
+  "subtitle": "Братская могила узников гетто",
+  "regionKey": "GrodnoRegion",
+  "region": "Гродненская область",
+  "typeKey": "memory",
+  "type": "Мемориал",
+  "era": "1943 · обелиск с 1967",
+  "eraBucket": "soviet",
+  "coords": [
+   53.785021,
+   24.849856
+  ],
+  "summary": "В центре Василишек находится братская могила узников гетто, расстрелянных 10 мая 1943 года. Обелиск установлен в 1967 году.",
+  "body": [
+   "Василишки — агрогородок в Щучинском районе Гродненской области. До войны здесь жила большая еврейская община, а само местечко было районным центром.",
+   "После оккупации в 1941 году нацисты создали гетто. Узников держали в тесноте, ежедневно выгоняли на принудительные работы, им запрещалось покидать гетто под угрозой расстрела.",
+   "10 мая 1943 года гетто ликвидировали. Людей выгоняли из домов, избивали и гнали к кладбищу, где расстреливали. В этот день погибли родные одного из немногих выживших, Самуила Полячека.",
+   "В 1967 году на месте расстрела установили обелиск. Сегодня это место памяти о еврейской общине Василишек и жертвах Холокоста."
+  ],
+  "facts": [
+   [
+    "Где",
+    "Гродненская область, Щучинский район, аг. Василишки"
+   ],
+   [
+    "Когда",
+    "10 мая 1943 · обелиск с 1967"
+   ],
+   [
+    "Статус",
+    "Братская могила, место памяти"
+   ]
+  ],
+  "sources": [
+   [
+    "Братская могила жертв фашизма, аг. Василишки",
+    "https://profkult-grodno.by/bratskaya-mogila-zhertv-fashizma-ag.-vasilishki-shhuchinskij-rajon-grodnenskaya-oblast/"
+   ],
+   [
+    "Wikimedia Commons: Ghetto Vasilishki",
+    "https://commons.wikimedia.org/wiki/Category:Vasili%C5%A1ki"
+   ]
+  ],
+  "hero": "assets/img/curated/vasilishki-hero.jpg",
+  "card": "assets/img/curated/vasilishki-card.jpg",
+  "images": [
+   {
+    "src": "assets/img/curated/vasilishki-hero.jpg",
+    "caption": "Памятник жертвам Холокоста в Василишках",
+    "credit": "Avner · CC0",
+    "page": "https://commons.wikimedia.org/wiki/File:Ghetto_Vasilishki_1a.jpg"
+   },
+   {
+    "src": "assets/img/curated/vasilishki-1.jpg",
+    "caption": "Памятник сбоку",
+    "credit": "Avner · CC0",
+    "page": "https://commons.wikimedia.org/wiki/File:Ghetto_Vasilishki_1b.jpg"
+   },
+   {
+    "src": "assets/img/curated/vasilishki-2.jpg",
+    "caption": "Надпись на памятнике",
+    "credit": "Avner · CC0",
+    "page": "https://commons.wikimedia.org/wiki/File:Ghetto_Vasilishki_2a.jpg"
+   },
+   {
+    "src": "assets/img/curated/vasilishki-3.jpg",
+    "caption": "Фрагмент надписи",
+    "credit": "Avner · CC0",
+    "page": "https://commons.wikimedia.org/wiki/File:Ghetto_Vasilishki_2b.jpg"
+   }
+  ]
+ }
+]

@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" role="img" aria-label="Нет изображения">
+  <rect width="800" height="500" fill="#e7dfcf"/>
+  <path d="M0 410 800 120M0 470 800 180M0 530 800 240" stroke="#d2c7b4" stroke-width="2"/>
+  <path d="M0 90 800 380M0 150 800 440" stroke="#d2c7b4" stroke-width="2"/>
+  <circle cx="400" cy="235" r="62" fill="none" stroke="#9c927f" stroke-width="2"/>
+  <path d="M400 173v124M338 235h124" stroke="#9c927f" stroke-width="1"/>
+  <text x="400" y="340" text-anchor="middle" font-family="Georgia, serif" font-size="22" fill="#6c6558">Спадчына</text>
+  <text x="400" y="366" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" letter-spacing="2" fill="#8a8273">ИЗОБРАЖЕНИЕ ГОТОВИТСЯ</text>
+</svg>

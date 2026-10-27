@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Спадчына">
+  <rect width="64" height="64" rx="10" fill="#b33a2b"/>
+  <path d="M15 50V29a17 17 0 0 1 34 0v21h-9V30a8 8 0 0 0-16 0v20z" fill="#faf7f0"/>
+  <path d="M29 50V31h6v19z" fill="#b33a2b"/>
+  <path d="M15 50h34v2H15z" fill="#faf7f0" opacity=".55"/>
+</svg>

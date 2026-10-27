@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Official catalogue — Spadchyna</title>
+<meta name="description" content="Catalogue of objects from the State List of Historical and Cultural Values of Belarus: search by name, region and type, map and route.">
+<meta name="theme-color" content="#f4f0e6">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Official catalogue — Spadchyna">
+<meta property="og:description" content="Catalogue of objects from the State List of Historical and Cultural Values of Belarus: search by name, region and type, map and route.">
+<meta property="og:image" content="../assets/img/curated/khatyn-hero.jpg">
+<link rel="icon" href="../assets/img/favicon.svg" type="image/svg+xml">
+<link rel="preload" href="../assets/fonts/Literata-normal-cyrillic.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="../assets/fonts/GolosText-normal-cyrillic.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="../assets/css/site.css">
+
+</head>
+<body data-base="./" data-assets="../" data-page="places" class="">
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="site-header">
+  <div class="container site-header__inner">
+    <a class="brand" href="./index.html" aria-label="Spadchyna — home">
+      <span class="brand__mark"><img src="../assets/img/logo.svg" alt=""></span>
+      <span class="brand__text"><span class="brand__name">Спадчына</span><span class="brand__sub">Places of memory in Belarus</span></span>
+    </a>
+    <nav class="site-nav" id="site-menu" data-menu aria-label="Main navigation"><a href="./map.html" data-nav="map">Map</a><a href="./stories.html" data-nav="stories">Places</a><a href="./places.html" data-nav="places" class="is-active">Catalogue</a><a href="./walks.html" data-nav="walks">Walks</a><a href="./about.html" data-nav="about">About</a></nav>
+    <div class="header-tools">
+      <div class="lang-switch" aria-label="Language"><a href="../places.html" data-lang-link hreflang="ru" lang="ru">RU</a><a href="../be/places.html" data-lang-link hreflang="be" lang="be">BE</a><a href="places.html" data-lang-link hreflang="en" lang="en" class="is-active" aria-current="page">EN</a></div>
+      <a class="route-pill" href="./routes.html" aria-label="Route"><span>Route</span> <strong data-route-count>0</strong></a>
+      <button class="menu-toggle" type="button" data-menu-toggle aria-expanded="false" aria-controls="site-menu" aria-label="Open menu"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+<main id="main">
+
+<section class="page-hero">
+  <div class="container">
+    <div class="page-hero__grid">
+      <div><div class="kicker">State List</div><h1>Official<br>catalogue.</h1></div>
+      <p>7,678 objects of historical and cultural heritage in Belarus. Search by name, region and type; open records and add places to your route.</p>
+    </div>
+    <div class="page-hero__meta"><span><strong data-stat="total">7,678</strong> objects</span><span><strong data-stat="coords">4,933</strong> with coordinates</span><span><strong>7</strong> regions</span><span>Data: heritage.gov.by</span></div>
+  </div>
+</section>
+<section class="section section--tight">
+  <div class="container">
+    <div class="filter-bar" role="search" aria-label="Search">
+      <div class="filter-field filter-field--search"><label for="filter-q">Search</label><input id="filter-q" type="search" placeholder="Name, address, type…" autocomplete="off"></div>
+      <div class="filter-field"><label for="filter-region">Region</label><select id="filter-region"></select></div>
+      <div class="filter-field"><label for="filter-group">Type</label><select id="filter-group"></select></div>
+      <label class="checkline"><input id="filter-curated" type="checkbox"> Stories only</label>
+      <div class="filter-actions"><button class="btn btn--ghost btn--small" type="button" id="filter-reset">Reset</button></div>
+    </div>
+    <div class="results-bar">
+      <span>Found <strong id="place-count">0</strong> records</span>
+      <label class="results-bar__sort">Sort
+        <select id="filter-sort"><option value="title">By name</option><option value="region">By region</option><option value="type">By type</option></select>
+      </label>
+    </div>
+    <div class="place-grid" id="place-grid"><p class="muted">Loading the catalogue…</p></div>
+    <div class="empty-state" id="empty-state" hidden><h3>Nothing found</h3><p>Try changing the query or resetting the filters.</p></div>
+    <div class="load-more"><button class="btn btn--ghost" type="button" id="load-more" hidden>Show more</button></div>
+    <div class="place-note">Object descriptions in the official catalogue are in Belarusian. The site does not translate official texts and does not replace the heritage.gov.by record. If an object has no downloaded description, open the official page.</div>
+    <noscript><p class="muted">JavaScript is required for the catalogue. Official data is available at <a href="https://heritage.gov.by/catalog">heritage.gov.by</a>.</p></noscript>
+  </div>
+</section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a class="brand" href="./index.html" aria-label="Spadchyna — home">
+          <span class="brand__mark"><img src="../assets/img/logo.svg" alt=""></span>
+          <span class="brand__text"><span class="brand__name">Спадчына</span><span class="brand__sub">Places of memory in Belarus</span></span>
+        </a>
+        <p class="footer-note">A guide to places of memory and cultural heritage in Belarus. An educational non-commercial project.</p>
+      </div>
+      <div>
+        <h2 class="footer-title">Navigation</h2>
+        <div class="footer-links">
+          <a href="./map.html">Map</a>
+          <a href="./stories.html">Places and monuments</a>
+          <a href="./places.html">Official catalogue</a>
+          <a href="./walks.html">Walks</a>
+          <a href="./routes.html">My route</a>
+        </div>
+      </div>
+      <div>
+        <h2 class="footer-title">Data</h2>
+        <div class="footer-links">
+          <a href="https://heritage.gov.by/catalog" target="_blank" rel="noopener">State List</a>
+          <a href="https://gosspisok.gov.by/" target="_blank" rel="noopener">State Register</a>
+          <a href="https://president.gov.by/ru" target="_blank" rel="noopener">Official portal</a>
+          <a href="./sources.html">Sources and credits</a>
+        </div>
+      </div>
+      <div>
+        <h2 class="footer-title">About</h2>
+        <p class="footer-note" style="margin-top:0">An educational non-commercial project. Not an official website of state bodies. All facts are linked to official sources.</p>
+        <p class="footer-note"><a href="./about.html">About</a> · <a href="./sources.html">Methodology</a></p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Spadchyna.</span>
+      <span>Made with respect for sources and memory.</span>
+    </div>
+  </div>
+</footer>
+<script defer src="../assets/js/common.js"></script>
+<script defer src="../assets/js/places.js"></script>
+
+</body>
+</html>

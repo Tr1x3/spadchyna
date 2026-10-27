@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Route of memory — Spadchyna</title>
+<meta name="description" content="Build a personal route through places of memory and cultural heritage in Belarus. Browser storage, distance and map links.">
+<meta name="theme-color" content="#f4f0e6">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Route of memory — Spadchyna">
+<meta property="og:description" content="Build a personal route through places of memory and cultural heritage in Belarus. Browser storage, distance and map links.">
+<meta property="og:image" content="../assets/img/curated/khatyn-hero.jpg">
+<link rel="icon" href="../assets/img/favicon.svg" type="image/svg+xml">
+<link rel="preload" href="../assets/fonts/Literata-normal-cyrillic.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="../assets/fonts/GolosText-normal-cyrillic.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="../assets/css/site.css">
+<link rel="stylesheet" href="../vendor/leaflet/leaflet.css">
+</head>
+<body data-base="./" data-assets="../" data-page="routes" class="">
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="site-header">
+  <div class="container site-header__inner">
+    <a class="brand" href="./index.html" aria-label="Spadchyna — home">
+      <span class="brand__mark"><img src="../assets/img/logo.svg" alt=""></span>
+      <span class="brand__text"><span class="brand__name">Спадчына</span><span class="brand__sub">Places of memory in Belarus</span></span>
+    </a>
+    <nav class="site-nav" id="site-menu" data-menu aria-label="Main navigation"><a href="./map.html" data-nav="map">Map</a><a href="./stories.html" data-nav="stories">Places</a><a href="./places.html" data-nav="places">Catalogue</a><a href="./walks.html" data-nav="walks">Walks</a><a href="./about.html" data-nav="about">About</a></nav>
+    <div class="header-tools">
+      <div class="lang-switch" aria-label="Language"><a href="../routes.html" data-lang-link hreflang="ru" lang="ru">RU</a><a href="../be/routes.html" data-lang-link hreflang="be" lang="be">BE</a><a href="routes.html" data-lang-link hreflang="en" lang="en" class="is-active" aria-current="page">EN</a></div>
+      <a class="route-pill" href="./routes.html" aria-label="Route"><span>Route</span> <strong data-route-count>0</strong></a>
+      <button class="menu-toggle" type="button" data-menu-toggle aria-expanded="false" aria-controls="site-menu" aria-label="Open menu"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+<main id="main">
+
+<section class="route-page">
+  <div class="container">
+    <div class="route-head"><div><div class="kicker">Personal route</div><h1>Route of<br>memory.</h1></div><p>Add places from the catalogue and stories, change the order, see the straight-line distance and open the route in external maps.</p></div>
+    <div class="route-layout">
+      <div class="route-map-wrap">
+        <div id="route-map" role="application" aria-label="Route map"></div>
+        <div class="map-tools" aria-label="Route map">
+          <button type="button" data-map-tool="fit">Whole route</button>
+          <button type="button" data-map-tool="locate">My location</button>
+          <button type="button" data-map-tool="zoom-in" aria-label="Zoom in">+</button>
+          <button type="button" data-map-tool="zoom-out" aria-label="Zoom out">−</button>
+        </div>
+      </div>
+      <aside class="route-side">
+        <div class="route-search">
+          <label for="route-search-input">Add a place</label>
+          <input id="route-search-input" type="search" placeholder="Start typing a name…" autocomplete="off">
+          <div class="route-results" id="route-results"></div>
+        </div>
+        <div class="route-empty" id="route-empty"><strong>Your route is empty.</strong><br>Find a place in the search above or add it from an object record.</div>
+        <div class="route-list" id="route-list"></div>
+        <div class="route-summary" id="route-summary" hidden>
+          <div class="route-summary__row"><span>Stops</span><strong id="route-points">0</strong></div>
+          <div class="route-summary__row"><span>Straight-line distance</span><strong id="route-distance">0 км</strong></div>
+          <div class="route-summary__note">This is an approximate distance between stops, not a road route. External services will build a driving route separately.</div>
+        </div>
+        <div class="route-links" id="route-links" hidden>
+          <a class="btn btn--primary" id="route-google" href="#" target="_blank" rel="noopener">Google Maps</a>
+          <a class="btn btn--ghost" id="route-yandex" href="#" target="_blank" rel="noopener">Yandex Maps</a>
+          <a class="btn btn--ghost" id="route-osm" href="#" target="_blank" rel="noopener">OpenStreetMap</a>
+          <button class="btn btn--ghost" type="button" id="route-clear">Clear</button>
+        </div>
+        <p class="route-help">The route is stored only in this browser (localStorage). Arrows change the order, × removes a stop. External maps may limit the number of waypoints; split the route if needed.</p>
+      </aside>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a class="brand" href="./index.html" aria-label="Spadchyna — home">
+          <span class="brand__mark"><img src="../assets/img/logo.svg" alt=""></span>
+          <span class="brand__text"><span class="brand__name">Спадчына</span><span class="brand__sub">Places of memory in Belarus</span></span>
+        </a>
+        <p class="footer-note">A guide to places of memory and cultural heritage in Belarus. An educational non-commercial project.</p>
+      </div>
+      <div>
+        <h2 class="footer-title">Navigation</h2>
+        <div class="footer-links">
+          <a href="./map.html">Map</a>
+          <a href="./stories.html">Places and monuments</a>
+          <a href="./places.html">Official catalogue</a>
+          <a href="./walks.html">Walks</a>
+          <a href="./routes.html">My route</a>
+        </div>
+      </div>
+      <div>
+        <h2 class="footer-title">Data</h2>
+        <div class="footer-links">
+          <a href="https://heritage.gov.by/catalog" target="_blank" rel="noopener">State List</a>
+          <a href="https://gosspisok.gov.by/" target="_blank" rel="noopener">State Register</a>
+          <a href="https://president.gov.by/ru" target="_blank" rel="noopener">Official portal</a>
+          <a href="./sources.html">Sources and credits</a>
+        </div>
+      </div>
+      <div>
+        <h2 class="footer-title">About</h2>
+        <p class="footer-note" style="margin-top:0">An educational non-commercial project. Not an official website of state bodies. All facts are linked to official sources.</p>
+        <p class="footer-note"><a href="./about.html">About</a> · <a href="./sources.html">Methodology</a></p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Spadchyna.</span>
+      <span>Made with respect for sources and memory.</span>
+    </div>
+  </div>
+</footer>
+<script defer src="../vendor/leaflet/leaflet.js"></script>
+<script defer src="../assets/js/common.js"></script>
+<script defer src="../assets/js/routes.js"></script>
+
+</body>
+</html>

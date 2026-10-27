@@ -1,0 +1,258 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Spadchyna — walks through places of memory in Belarus</title>
+<meta name="description" content="Ready-made walks through places of memory in Belarus: Minsk in an hour, Brest and Grodno in two hours, plus Vitebsk, Polotsk, Gomel, Mogilev, Kamenets and Nesvizh. Map, official descriptions and Belarusian food nearby.">
+<meta name="theme-color" content="#f4f0e6">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Spadchyna — walks through places of memory in Belarus">
+<meta property="og:description" content="Ready-made walks through places of memory in Belarus: Minsk in an hour, Brest and Grodno in two hours, plus Vitebsk, Polotsk, Gomel, Mogilev, Kamenets and Nesvizh. Map, official descriptions and Belarusian food nearby.">
+<meta property="og:image" content="../assets/img/curated/khatyn-hero.jpg">
+<link rel="icon" href="../assets/img/favicon.svg" type="image/svg+xml">
+<link rel="preload" href="../assets/fonts/Literata-normal-cyrillic.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="../assets/fonts/GolosText-normal-cyrillic.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="../assets/css/site.css">
+
+<link rel="stylesheet" href="../vendor/leaflet/leaflet.css">
+<link rel="stylesheet" href="../vendor/markercluster/MarkerCluster.css">
+<link rel="stylesheet" href="../vendor/markercluster/MarkerCluster.Default.css">
+</head>
+<body data-base="./" data-assets="../" data-page="home" class="">
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="site-header">
+  <div class="container site-header__inner">
+    <a class="brand" href="./index.html" aria-label="Spadchyna — home">
+      <span class="brand__mark"><img src="../assets/img/logo.svg" alt=""></span>
+      <span class="brand__text"><span class="brand__name">Спадчына</span><span class="brand__sub">Places of memory in Belarus</span></span>
+    </a>
+    <nav class="site-nav" id="site-menu" data-menu aria-label="Main navigation"><a href="./map.html" data-nav="map">Map</a><a href="./stories.html" data-nav="stories">Places</a><a href="./places.html" data-nav="places">Catalogue</a><a href="./walks.html" data-nav="walks">Walks</a><a href="./about.html" data-nav="about">About</a></nav>
+    <div class="header-tools">
+      <div class="lang-switch" aria-label="Language"><a href="../index.html" data-lang-link hreflang="ru" lang="ru">RU</a><a href="../be/index.html" data-lang-link hreflang="be" lang="be">BE</a><a href="index.html" data-lang-link hreflang="en" lang="en" class="is-active" aria-current="page">EN</a></div>
+      <a class="route-pill" href="./routes.html" aria-label="Route"><span>Route</span> <strong data-route-count>0</strong></a>
+      <button class="menu-toggle" type="button" data-menu-toggle aria-expanded="false" aria-controls="site-menu" aria-label="Open menu"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+<main id="main">
+
+<section class="hero">
+  <div class="container">
+    <div class="hero__grid">
+      <div class="hero__content">
+        <div class="hero__eyebrow eyebrow">A guide to places of memory</div>
+        <h1>To remember is<br>to <em>see</em>.</h1>
+        <p class="hero__lead">Ready-made walks through places of memory: from an hour in central Minsk to two hours in Brest and Grodno. With official descriptions, a map and a route you can follow yourself.</p>
+        <div class="hero__actions">
+          <a class="btn btn--primary" href="./walks.html">Choose a walk <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+          <a class="btn btn--ghost" href="./map.html">Open the map</a>
+        </div>
+        <div class="hero__meta">
+          <span>Belarus · 7 regions</span>
+          <span><strong data-stat="coords">4933</strong> on the map</span>
+          <span><strong data-stat="total">7,678</strong> objects</span>
+        </div>
+      </div>
+      <div class="hero__media">
+        <img src="../assets/img/curated/khatyn-hero.jpg" alt="Khatyn" data-fallback>
+        <span class="hero__stamp">Minsk Region · 54°20′ N</span>
+        <div class="hero__caption">
+          <p>Khatyn. A memorial on the site of a village burned on 22 March 1943.</p>
+          <span>Photo: Joakim Berndes<br>CC BY-SA 4.0 · Wikimedia Commons</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="container">
+  <div class="stats-strip" aria-label="objects in the official catalogue">
+    <div class="stat"><div class="stat__num" data-stat="total">7,678</div><div class="stat__label">objects in the official catalogue</div></div>
+    <div class="stat"><div class="stat__num" data-stat="coords">4,933</div><div class="stat__label">mapped coordinates</div></div>
+    <div class="stat"><div class="stat__num" data-stat="curated">21</div><div class="stat__label">long essays</div></div>
+    <div class="stat"><div class="stat__num" data-stat="regions">7</div><div class="stat__label">regions and the city of Minsk</div></div>
+  </div>
+</div>
+
+<section class="section section--walks">
+  <div class="container">
+    <div class="section-head">
+      <div><div class="kicker">Ready-made walks</div><h2>One hour. Two hours. No rush.</h2></div>
+      <p>We have built routes by time: a short walk in central Minsk, two hours through places of memory, and longer routes in Brest, Grodno, Vitebsk, Polotsk, Gomel, Mogilev, Kamenets and Nesvizh. Every stop has an official description and a source link.</p>
+    </div>
+    <div class="walk-grid" id="home-walks"><p class="muted">Loading walks…</p></div>
+    <div class="story-note"><span>Time is approximate — it does not include museum visits or coffee stops.</span><a class="link-arrow" href="./walks.html">All walks <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div>
+  </div>
+</section>
+
+<section class="section section--map">
+  <div class="container">
+    <div class="section-head">
+      <div><div class="kicker">Map of Belarus</div><h2>Every place with coordinates, on one map.</h2></div>
+      <p>The country outline and the official catalogue points. An era is shown only where the dating or an essay field supports it. A walk is drawn through the stops already on record.</p>
+    </div>
+    <div class="home-map-bar" id="home-map-bar"></div>
+    <div id="home-map" class="home-map" role="application" aria-label="Map of Belarus"></div>
+    <p class="home-map-note" id="home-map-note"></p>
+  </div>
+</section>
+
+<section class="section section--paper">
+  <div class="container">
+    <div class="section-head">
+      <div><div class="kicker">Places and monuments</div><h2>Not dates, but places where history becomes tangible.</h2></div>
+      <p>We chose objects without which it is hard to imagine the memory of war and the cultural heritage of Belarus. Each has official sources, photographs and coordinates.</p>
+    </div>
+    <div class="story-grid" id="home-stories"><article class="story-card story-card--wide">
+  <a class="story-card__media" href="./place/khatyn.html">
+    <span class="story-card__index">00</span>
+    <img src="../assets/img/curated/khatyn-card.jpg" alt="Khatyn" loading="lazy" data-fallback>
+  </a>
+  <div class="story-card__body">
+    <div class="story-card__meta"><span>Minsk Region</span><span>Memorial</span></div>
+    <h3 class="story-card__title"><a href="./place/khatyn.html">Khatyn</a></h3>
+    <p class="story-card__sub">Memorial on the site of a burned village</p>
+    <div class="story-card__foot"><span>1943 · memorial since 1969</span><a href="./place/khatyn.html">Read</a></div>
+  </div>
+</article><article class="story-card story-card--small">
+  <a class="story-card__media" href="./place/brest.html">
+    <span class="story-card__index">01</span>
+    <img src="../assets/img/curated/brest-card.jpg" alt="Brest Fortress" loading="lazy" data-fallback>
+  </a>
+  <div class="story-card__body">
+    <div class="story-card__meta"><span>Brest Region</span><span>Memorial</span></div>
+    <h3 class="story-card__title"><a href="./place/brest.html">Brest Fortress</a></h3>
+    <p class="story-card__sub">Hero fortress on the western border</p>
+    <div class="story-card__foot"><span>1830–1842 · defence of 1941</span><a href="./place/brest.html">Read</a></div>
+  </div>
+</article><article class="story-card story-card--small">
+  <a class="story-card__media" href="./place/trostenets.html">
+    <span class="story-card__index">02</span>
+    <img src="../assets/img/curated/trostenets-card.jpg" alt="Trostenets" loading="lazy" data-fallback>
+  </a>
+  <div class="story-card__body">
+    <div class="story-card__meta"><span>Minsk City</span><span>Memorial</span></div>
+    <h3 class="story-card__title"><a href="./place/trostenets.html">Trostenets</a></h3>
+    <p class="story-card__sub">The largest death camp in the USSR</p>
+    <div class="story-card__foot"><span>1942–1944 · memorial since 2015</span><a href="./place/trostenets.html">Read</a></div>
+  </div>
+</article><article class="story-card ">
+  <a class="story-card__media" href="./place/krasny-bereg.html">
+    <span class="story-card__index">03</span>
+    <img src="../assets/img/curated/krasny-bereg-card.jpg" alt="Krasny Bereg" loading="lazy" data-fallback>
+  </a>
+  <div class="story-card__body">
+    <div class="story-card__meta"><span>Gomel Region</span><span>Memorial</span></div>
+    <h3 class="story-card__title"><a href="./place/krasny-bereg.html">Krasny Bereg</a></h3>
+    <p class="story-card__sub">“To Children — Victims of War” memorial</p>
+    <div class="story-card__foot"><span>1941–1944 · memorial since 2007</span><a href="./place/krasny-bereg.html">Read</a></div>
+  </div>
+</article><article class="story-card ">
+  <a class="story-card__media" href="./place/mir.html">
+    <span class="story-card__index">04</span>
+    <img src="../assets/img/curated/mir-card.jpg" alt="Mir Castle" loading="lazy" data-fallback>
+  </a>
+  <div class="story-card__body">
+    <div class="story-card__meta"><span>Grodno Region</span><span>Castle</span></div>
+    <h3 class="story-card__title"><a href="./place/mir.html">Mir Castle</a></h3>
+    <p class="story-card__sub">The first private stone castle in the Grand Duchy of Lithuania</p>
+    <div class="story-card__foot"><span>16th–20th centuries</span><a href="./place/mir.html">Read</a></div>
+  </div>
+</article><article class="story-card ">
+  <a class="story-card__media" href="./place/ola.html">
+    <span class="story-card__index">05</span>
+    <img src="../assets/img/curated/ola-card.jpg" alt="Ola" loading="lazy" data-fallback>
+  </a>
+  <div class="story-card__body">
+    <div class="story-card__meta"><span>Gomel Region</span><span>Memorial</span></div>
+    <h3 class="story-card__title"><a href="./place/ola.html">Ola</a></h3>
+    <p class="story-card__sub">Memorial to a burned village</p>
+    <div class="story-card__foot"><span>1944 · memorial since 2020</span><a href="./place/ola.html">Read</a></div>
+  </div>
+</article></div>
+    <div class="story-note"><span>Every story is accompanied by links to official museum websites and the State List.</span><a class="link-arrow" href="./stories.html">All catalogue places <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div>
+  </div>
+</section>
+
+<section class="section section--dark route-band">
+  <div class="container">
+    <div class="route-band__grid">
+      <div>
+        <div class="kicker">Route</div>
+        <h2>Build your own map of memory.</h2>
+        <p>Choose a ready-made walk or add your own places from the catalogue. The route is stored in your browser — no registration.</p>
+        <a class="btn btn--light" href="./walks.html">Choose a walk <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      </div>
+      <div class="route-steps">
+        <div class="route-step"><div class="route-step__num">01</div><h3>Choose places</h3><p>Through search or object cards.</p></div>
+        <div class="route-step"><div class="route-step__num">02</div><h3>Set the order</h3><p>Move stops up and down in the list.</p></div>
+        <div class="route-step"><div class="route-step__num">03</div><h3>Open the route</h3><p>Links to Google, Yandex and OSM.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section section--tight">
+  <div class="container">
+    <div class="section-head section-head--left"><div><div class="kicker">Sources</div><h2>Not a retelling, but a verifiable base.</h2></div><p>The main data layer is the State List of Historical and Cultural Values. The stories rely on official museum and memorial websites.</p></div>
+    <div class="trust-grid">
+      <div class="trust-item"><h3>Official catalogue</h3><p>Names, addresses, categories and images of objects — <a href="https://heritage.gov.by/catalog" target="_blank" rel="noopener">heritage.gov.by</a>. Descriptions are given in the original language.</p></div>
+      <div class="trust-item"><h3>Museums and memorials</h3><p>Khatyn, Brest Fortress, Ola, Krasny Bereg, Ozarichi and others — with links to their official pages.</p></div>
+      <div class="trust-item"><h3>Photographs and licences</h3><p>Wikimedia Commons images — with author and licence. Museum photos — with source. All credits are <a href="./sources.html">on a separate page</a>.</p></div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a class="brand" href="./index.html" aria-label="Spadchyna — home">
+          <span class="brand__mark"><img src="../assets/img/logo.svg" alt=""></span>
+          <span class="brand__text"><span class="brand__name">Спадчына</span><span class="brand__sub">Places of memory in Belarus</span></span>
+        </a>
+        <p class="footer-note">A guide to places of memory and cultural heritage in Belarus. An educational non-commercial project.</p>
+      </div>
+      <div>
+        <h2 class="footer-title">Navigation</h2>
+        <div class="footer-links">
+          <a href="./map.html">Map</a>
+          <a href="./stories.html">Places and monuments</a>
+          <a href="./places.html">Official catalogue</a>
+          <a href="./walks.html">Walks</a>
+          <a href="./routes.html">My route</a>
+        </div>
+      </div>
+      <div>
+        <h2 class="footer-title">Data</h2>
+        <div class="footer-links">
+          <a href="https://heritage.gov.by/catalog" target="_blank" rel="noopener">State List</a>
+          <a href="https://gosspisok.gov.by/" target="_blank" rel="noopener">State Register</a>
+          <a href="https://president.gov.by/ru" target="_blank" rel="noopener">Official portal</a>
+          <a href="./sources.html">Sources and credits</a>
+        </div>
+      </div>
+      <div>
+        <h2 class="footer-title">About</h2>
+        <p class="footer-note" style="margin-top:0">An educational non-commercial project. Not an official website of state bodies. All facts are linked to official sources.</p>
+        <p class="footer-note"><a href="./about.html">About</a> · <a href="./sources.html">Methodology</a></p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Spadchyna.</span>
+      <span>Made with respect for sources and memory.</span>
+    </div>
+  </div>
+</footer>
+<script defer src="../vendor/leaflet/leaflet.js"></script>
+<script defer src="../vendor/markercluster/leaflet.markercluster.js"></script>
+<script defer src="../assets/js/common.js"></script>
+<script defer src="../assets/js/walks.js"></script>
+<script defer src="../assets/js/home.js"></script>
+
+</body>
+</html>

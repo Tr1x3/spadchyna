@@ -1,0 +1,258 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Спадчына — прогулки по местам памяти Беларуси</title>
+<meta name="description" content="Готовые прогулки по местам памяти Беларуси: Минск за час, Брест и Гродно за два часа, а также Витебск, Полоцк, Гомель, Могилёв, Каменец и Несвиж. Карта, официальные описания и белорусская кухня рядом.">
+<meta name="theme-color" content="#f4f0e6">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Спадчына — прогулки по местам памяти Беларуси">
+<meta property="og:description" content="Готовые прогулки по местам памяти Беларуси: Минск за час, Брест и Гродно за два часа, а также Витебск, Полоцк, Гомель, Могилёв, Каменец и Несвиж. Карта, официальные описания и белорусская кухня рядом.">
+<meta property="og:image" content="./assets/img/curated/khatyn-hero.jpg">
+<link rel="icon" href="./assets/img/favicon.svg" type="image/svg+xml">
+<link rel="preload" href="./assets/fonts/Literata-normal-cyrillic.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="./assets/fonts/GolosText-normal-cyrillic.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="./assets/css/site.css">
+
+<link rel="stylesheet" href="./vendor/leaflet/leaflet.css">
+<link rel="stylesheet" href="./vendor/markercluster/MarkerCluster.css">
+<link rel="stylesheet" href="./vendor/markercluster/MarkerCluster.Default.css">
+</head>
+<body data-base="./" data-assets="./" data-page="home" class="">
+<a class="skip-link" href="#main">Перейти к содержанию</a>
+
+<header class="site-header">
+  <div class="container site-header__inner">
+    <a class="brand" href="./index.html" aria-label="Спадчына — на главную">
+      <span class="brand__mark"><img src="./assets/img/logo.svg" alt=""></span>
+      <span class="brand__text"><span class="brand__name">Спадчына</span><span class="brand__sub">Места памяти Беларуси</span></span>
+    </a>
+    <nav class="site-nav" id="site-menu" data-menu aria-label="Основная навигация"><a href="./map.html" data-nav="map">Карта</a><a href="./stories.html" data-nav="stories">Места</a><a href="./places.html" data-nav="places">Каталог</a><a href="./walks.html" data-nav="walks">Прогулки</a><a href="./about.html" data-nav="about">О проекте</a></nav>
+    <div class="header-tools">
+      <div class="lang-switch" aria-label="Язык"><a href="index.html" data-lang-link hreflang="ru" lang="ru" class="is-active" aria-current="page">RU</a><a href="be/index.html" data-lang-link hreflang="be" lang="be">BE</a><a href="en/index.html" data-lang-link hreflang="en" lang="en">EN</a></div>
+      <a class="route-pill" href="./routes.html" aria-label="Маршрут"><span>Маршрут</span> <strong data-route-count>0</strong></a>
+      <button class="menu-toggle" type="button" data-menu-toggle aria-expanded="false" aria-controls="site-menu" aria-label="Открыть меню"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+<main id="main">
+
+<section class="hero">
+  <div class="container">
+    <div class="hero__grid">
+      <div class="hero__content">
+        <div class="hero__eyebrow eyebrow">Путеводитель по местам памяти</div>
+        <h1>Помнить —<br>значит <em>видеть</em>.</h1>
+        <p class="hero__lead">Готовые прогулки по местам памяти: от часа в центре Минска до двух часов в Бресте и Гродно. С официальными описаниями, картой и маршрутом, который можно пройти самому.</p>
+        <div class="hero__actions">
+          <a class="btn btn--primary" href="./walks.html">Выбрать прогулку <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+          <a class="btn btn--ghost" href="./map.html">Открыть карту</a>
+        </div>
+        <div class="hero__meta">
+          <span>Беларусь · 7 областей</span>
+          <span><strong data-stat="coords">4933</strong> на карте</span>
+          <span><strong data-stat="total">7 678</strong> объектов</span>
+        </div>
+      </div>
+      <div class="hero__media">
+        <img src="./assets/img/curated/khatyn-hero.jpg" alt="Хатынь" data-fallback>
+        <span class="hero__stamp">Минская область · 54°20′ N</span>
+        <div class="hero__caption">
+          <p>Хатынь. Мемориал на месте деревни, сожжённой 22 марта 1943 года.</p>
+          <span>Фото: Joakim Berndes<br>CC BY-SA 4.0 · Wikimedia Commons</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="container">
+  <div class="stats-strip" aria-label="объектов в официальном каталоге">
+    <div class="stat"><div class="stat__num" data-stat="total">7 678</div><div class="stat__label">объектов в официальном каталоге</div></div>
+    <div class="stat"><div class="stat__num" data-stat="coords">4 933</div><div class="stat__label">точек с координатами на карте</div></div>
+    <div class="stat"><div class="stat__num" data-stat="curated">21</div><div class="stat__label">больших очерков</div></div>
+    <div class="stat"><div class="stat__num" data-stat="regions">7</div><div class="stat__label">областей и город Минск</div></div>
+  </div>
+</div>
+
+<section class="section section--walks">
+  <div class="container">
+    <div class="section-head">
+      <div><div class="kicker">Готовые прогулки</div><h2>Один час. Два часа. Без спешки.</h2></div>
+      <p>Мы собрали маршруты по времени: короткая прогулка по центру Минска, два часа по местам памяти и более длинные маршруты по Бресту, Гродно, Витебску, Полоцку, Гомелю, Могилёву, Каменцу и Несвижу. У каждой остановки — официальное описание и ссылка на источник.</p>
+    </div>
+    <div class="walk-grid" id="home-walks"><p class="muted">Загрузка прогулок…</p></div>
+    <div class="story-note"><span>Время указано ориентировочно — без учёта посещения музеев и остановок на кофе.</span><a class="link-arrow" href="./walks.html">Все прогулки <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div>
+  </div>
+</section>
+
+<section class="section section--map">
+  <div class="container">
+    <div class="section-head">
+      <div><div class="kicker">Карта Беларуси</div><h2>Все места с координатами — на одной карте.</h2></div>
+      <p>Граница страны и точки официального каталога. Эпоха видна только там, где она следует из датировки или из поля очерка. Прогулка рисуется по уже собранным остановкам.</p>
+    </div>
+    <div class="home-map-bar" id="home-map-bar"></div>
+    <div id="home-map" class="home-map" role="application" aria-label="Карта Беларуси"></div>
+    <p class="home-map-note" id="home-map-note"></p>
+  </div>
+</section>
+
+<section class="section section--paper">
+  <div class="container">
+    <div class="section-head">
+      <div><div class="kicker">Большие очерки</div><h2>Не даты, а места, где история становится осязаемой.</h2></div>
+      <p>Мы выбирали объекты, без которых трудно представить память о войне и культурное наследие Беларуси. У каждого — официальные источники, фотографии и координаты.</p>
+    </div>
+    <div class="story-grid" id="home-stories"><article class="story-card story-card--wide">
+  <a class="story-card__media" href="./place/khatyn.html">
+    <span class="story-card__index">00</span>
+    <img src="./assets/img/curated/khatyn-card.jpg" alt="Хатынь" loading="lazy" data-fallback>
+  </a>
+  <div class="story-card__body">
+    <div class="story-card__meta"><span>Минская область</span><span>Мемориал</span></div>
+    <h3 class="story-card__title"><a href="./place/khatyn.html">Хатынь</a></h3>
+    <p class="story-card__sub">Мемориал на месте сожжённой деревни</p>
+    <div class="story-card__foot"><span>1943 · мемориал с 1969</span><a href="./place/khatyn.html">Читать</a></div>
+  </div>
+</article><article class="story-card story-card--small">
+  <a class="story-card__media" href="./place/brest.html">
+    <span class="story-card__index">01</span>
+    <img src="./assets/img/curated/brest-card.jpg" alt="Брестская крепость" loading="lazy" data-fallback>
+  </a>
+  <div class="story-card__body">
+    <div class="story-card__meta"><span>Брестская область</span><span>Мемориал</span></div>
+    <h3 class="story-card__title"><a href="./place/brest.html">Брестская крепость</a></h3>
+    <p class="story-card__sub">Крепость-герой на западной границе</p>
+    <div class="story-card__foot"><span>1830–1842 · оборона 1941</span><a href="./place/brest.html">Читать</a></div>
+  </div>
+</article><article class="story-card story-card--small">
+  <a class="story-card__media" href="./place/trostenets.html">
+    <span class="story-card__index">02</span>
+    <img src="./assets/img/curated/trostenets-card.jpg" alt="Тростенец" loading="lazy" data-fallback>
+  </a>
+  <div class="story-card__body">
+    <div class="story-card__meta"><span>город Минск</span><span>Мемориал</span></div>
+    <h3 class="story-card__title"><a href="./place/trostenets.html">Тростенец</a></h3>
+    <p class="story-card__sub">Крупнейший лагерь смерти на территории СССР</p>
+    <div class="story-card__foot"><span>1942–1944 · мемориал с 2015</span><a href="./place/trostenets.html">Читать</a></div>
+  </div>
+</article><article class="story-card ">
+  <a class="story-card__media" href="./place/krasny-bereg.html">
+    <span class="story-card__index">03</span>
+    <img src="./assets/img/curated/krasny-bereg-card.jpg" alt="Красный Берег" loading="lazy" data-fallback>
+  </a>
+  <div class="story-card__body">
+    <div class="story-card__meta"><span>Гомельская область</span><span>Мемориал</span></div>
+    <h3 class="story-card__title"><a href="./place/krasny-bereg.html">Красный Берег</a></h3>
+    <p class="story-card__sub">Мемориал «Детям — жертвам войны»</p>
+    <div class="story-card__foot"><span>1941–1944 · мемориал с 2007</span><a href="./place/krasny-bereg.html">Читать</a></div>
+  </div>
+</article><article class="story-card ">
+  <a class="story-card__media" href="./place/mir.html">
+    <span class="story-card__index">04</span>
+    <img src="./assets/img/curated/mir-card.jpg" alt="Мирский замок" loading="lazy" data-fallback>
+  </a>
+  <div class="story-card__body">
+    <div class="story-card__meta"><span>Гродненская область</span><span>Замок</span></div>
+    <h3 class="story-card__title"><a href="./place/mir.html">Мирский замок</a></h3>
+    <p class="story-card__sub">Первый частный каменный замок ВКЛ</p>
+    <div class="story-card__foot"><span>XVI–XX вв.</span><a href="./place/mir.html">Читать</a></div>
+  </div>
+</article><article class="story-card ">
+  <a class="story-card__media" href="./place/ola.html">
+    <span class="story-card__index">05</span>
+    <img src="./assets/img/curated/ola-card.jpg" alt="Ола" loading="lazy" data-fallback>
+  </a>
+  <div class="story-card__body">
+    <div class="story-card__meta"><span>Гомельская область</span><span>Мемориал</span></div>
+    <h3 class="story-card__title"><a href="./place/ola.html">Ола</a></h3>
+    <p class="story-card__sub">Мемориал сожжённой деревни</p>
+    <div class="story-card__foot"><span>1944 · мемориал с 2020</span><a href="./place/ola.html">Читать</a></div>
+  </div>
+</article></div>
+    <div class="story-note"><span>Все истории сопровождаются ссылками на официальные сайты музеев и Государственный список.</span><a class="link-arrow" href="./stories.html">Все места каталога <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div>
+  </div>
+</section>
+
+<section class="section section--dark route-band">
+  <div class="container">
+    <div class="route-band__grid">
+      <div>
+        <div class="kicker">Маршрут</div>
+        <h2>Соберите свою карту памяти.</h2>
+        <p>Выберите готовую прогулку или добавьте свои места из каталога. Маршрут сохраняется в браузере — без регистрации.</p>
+        <a class="btn btn--light" href="./walks.html">Выбрать прогулку <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      </div>
+      <div class="route-steps">
+        <div class="route-step"><div class="route-step__num">01</div><h3>Выберите места</h3><p>Через поиск или карточки объектов.</p></div>
+        <div class="route-step"><div class="route-step__num">02</div><h3>Расставьте порядок</h3><p>Меняйте точки местами в списке.</p></div>
+        <div class="route-step"><div class="route-step__num">03</div><h3>Откройте маршрут</h3><p>Ссылки на Google, Яндекс и OSM.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section section--tight">
+  <div class="container">
+    <div class="section-head section-head--left"><div><div class="kicker">Источники</div><h2>Не пересказ, а проверяемая основа.</h2></div><p>Основной слой данных — Государственный список историко-культурных ценностей. Авторские тексты опираются на официальные сайты музеев и мемориалов.</p></div>
+    <div class="trust-grid">
+      <div class="trust-item"><h3>Официальный каталог</h3><p>Названия, адреса, категории и изображения объектов — <a href="https://heritage.gov.by/catalog" target="_blank" rel="noopener">heritage.gov.by</a>. Описания приведены на языке оригинала.</p></div>
+      <div class="trust-item"><h3>Музеи и мемориалы</h3><p>Хатынь, Брестская крепость, Ола, Красный Берег, Озаричи и другие — со ссылками на их официальные страницы.</p></div>
+      <div class="trust-item"><h3>Фотографии и лицензии</h3><p>Снимки Wikimedia Commons — с указанием автора и лицензии. Фото музеев — с указанием источника. Все кредиты — <a href="./sources.html">на отдельной странице</a>.</p></div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a class="brand" href="./index.html" aria-label="Спадчына — на главную">
+          <span class="brand__mark"><img src="./assets/img/logo.svg" alt=""></span>
+          <span class="brand__text"><span class="brand__name">Спадчына</span><span class="brand__sub">Места памяти Беларуси</span></span>
+        </a>
+        <p class="footer-note">Путеводитель по местам памяти и культурному наследию Беларуси. Образовательный некоммерческий проект.</p>
+      </div>
+      <div>
+        <h2 class="footer-title">Навигация</h2>
+        <div class="footer-links">
+          <a href="./map.html">Карта</a>
+          <a href="./stories.html">Места и памятники</a>
+          <a href="./places.html">Официальный каталог</a>
+          <a href="./walks.html">Прогулки</a>
+          <a href="./routes.html">Мой маршрут</a>
+        </div>
+      </div>
+      <div>
+        <h2 class="footer-title">Данные</h2>
+        <div class="footer-links">
+          <a href="https://heritage.gov.by/catalog" target="_blank" rel="noopener">Государственный список</a>
+          <a href="https://gosspisok.gov.by/" target="_blank" rel="noopener">Госсписок</a>
+          <a href="https://president.gov.by/ru" target="_blank" rel="noopener">Официальный портал</a>
+          <a href="./sources.html">Источники и кредиты</a>
+        </div>
+      </div>
+      <div>
+        <h2 class="footer-title">О проекте</h2>
+        <p class="footer-note" style="margin-top:0">Образовательный некоммерческий проект. Не является официальным сайтом государственных органов. Все факты — со ссылками на официальные источники.</p>
+        <p class="footer-note"><a href="./about.html">О проекте</a> · <a href="./sources.html">Методика</a></p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 «Спадчына».</span>
+      <span>Сделано с уважением к источникам и памяти.</span>
+    </div>
+  </div>
+</footer>
+<script defer src="./vendor/leaflet/leaflet.js"></script>
+<script defer src="./vendor/markercluster/leaflet.markercluster.js"></script>
+<script defer src="./assets/js/common.js"></script>
+<script defer src="./assets/js/walks.js"></script>
+<script defer src="./assets/js/home.js"></script>
+
+</body>
+</html>
