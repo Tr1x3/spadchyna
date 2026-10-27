@@ -28,8 +28,8 @@
       '</a>' +
       '<div class="place-card__body">' +
         '<div class="place-card__meta"><span>' + S.escapeHTML(region) + '</span><span>' + S.escapeHTML(p.cur ? S.t('story') : S.groupLabel(p.g)) + '</span></div>' +
-        '<h3><a href="' + href + '">' + S.escapeHTML(title) + '</a></h3>' +
-        '<p class="place-card__address">' + S.escapeHTML(p.a || S.t('addressUnknown')) + '</p>' +
+        '<h3><a href="' + href + '">' + (p.cur || S.LANG === 'be' ? S.escapeHTML(title) : '<span data-origin="' + S.escapeHTML(title) + '">' + S.escapeHTML(title) + '</span>') + '</a></h3>' +
+        '<p class="place-card__address"' + (S.LANG !== 'be' && p.a ? ' data-origin="' + S.escapeHTML(p.a) + '"' : '') + '>' + S.escapeHTML(p.a || S.t('addressUnknown')) + '</p>' +
         '<div class="place-card__foot"><span>' + S.escapeHTML(type) + '</span>' +
           '<button class="icon-btn icon-btn--labeled" type="button" ' + routeData + ' aria-label="' + S.escapeHTML(S.t('addRoute')) + '"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg><span>' + S.t('addRoute') + '</span></button>' +
         '</div>' +
@@ -76,6 +76,7 @@
     if (more) more.hidden = list.length <= state.limit;
     if (empty) empty.hidden = list.length !== 0;
     S.bindImages(document);
+    if (grid) S.applyPageLanguage(grid);
     S.initReveal(grid);
     syncUrl();
   }

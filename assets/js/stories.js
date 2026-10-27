@@ -54,7 +54,7 @@
         '<div class="place-card__meta"><span>' + S.escapeHTML(region) + '</span><span>' + S.escapeHTML(kind) + (bucket ? ' · ' + S.escapeHTML(S.eraLabel(bucket)) : '') + '</span></div>' +
         '<h3><a href="' + href + '">' + (storyOf(p) || S.LANG === 'be' ? S.escapeHTML(title) : '<span data-origin="' + S.escapeHTML(title) + '">' + S.escapeHTML(title) + '</span>') + '</a></h3>' +
         textHtml +
-        '<div class="place-card__foot"><span>' + S.escapeHTML(p.a || '') + '</span>' + translate + '</div>' +
+        '<div class="place-card__foot"><span' + (S.LANG !== 'be' && p.a ? ' data-origin="' + S.escapeHTML(p.a) + '"' : '') + '>' + S.escapeHTML(p.a || '') + '</span>' + translate + '</div>' +
       '</div></article>';
   }
   function filtered(){
@@ -91,6 +91,7 @@
     if (count) count.textContent = S.formatNumber(list.length);
     if (more) more.hidden = list.length <= state.limit;
     S.bindImages(grid || document);
+    if (grid) S.applyPageLanguage(grid);
     renderEssays();
   }
   function renderFilters(){

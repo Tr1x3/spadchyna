@@ -184,7 +184,7 @@
       const icon = L.divIcon({className:'map-marker-wrap', html:'<span class="map-dot map-dot--' + theme + '"></span>', iconSize:[size,size], iconAnchor:[size/2,size/2]});
       const marker = L.marker([p.lat, p.lon], {icon, title:pointTitle(p)});
       marker.bindPopup(popupFor(p), {maxWidth:320, minWidth:260, autoPanPadding:[24,24]});
-      marker.on('popupopen', ev => S.bindImages(ev.popup.getElement()));
+      marker.on('popupopen', ev => { S.bindImages(ev.popup.getElement()); S.applyPageLanguage(ev.popup.getElement()); });
       markers.set(p.u, marker);
     });
     cafes.forEach(c => {

@@ -36,14 +36,14 @@
     const entries = Object.entries(fields || {});
     if (!entries.length) return '';
     return '<table class="detail-table"><tbody>' + entries.map(([k,v]) =>
-      '<tr><th>' + S.escapeHTML(FIELD_LABELS[k] || k) + '</th><td>' + S.escapeHTML(v) + '</td></tr>'
+      '<tr><th>' + S.escapeHTML(FIELD_LABELS[k] || k) + '</th><td' + (S.LANG === 'be' ? '' : ' data-origin="' + S.escapeHTML(v) + '"') + '>' + S.escapeHTML(v) + '</td></tr>'
     ).join('') + '</tbody></table>';
   }
   function relatedCard(p){
     const href = S.placeUrl(p);
     return '<article class="related-card">' +
       '<a href="' + href + '"><img src="' + S.imageUrl(p) + '" alt="' + S.escapeHTML(p.t) + '" loading="lazy" data-fallback></a>' +
-      '<h3><a href="' + href + '">' + S.escapeHTML(p.t) + '</a></h3>' +
+      '<h3><a href="' + href + '">' + (S.LANG === 'be' ? S.escapeHTML(p.t) : '<span data-origin="' + S.escapeHTML(p.t) + '">' + S.escapeHTML(p.t) + '</span>') + '</a></h3>' +
       '<p>' + S.escapeHTML(S.regionName(p.r)) + '</p>' +
     '</article>';
   }
@@ -63,7 +63,7 @@
     const fields = (details && details.fields) || {};
     const translationBlock = (S.LANG !== 'be' && paras.length)
       ? '<div class="aside-block"><h2>' + S.t('translation') + '</h2><div class="aside-actions">' +
-          '<button class="btn btn--ghost btn--small" type="button" data-translate="place-prose">' + S.t('translate') + '</button>' +
+          '<button class="btn btn--ghost btn--small" type="button" data-translate="place-content">' + S.t('translate') + '</button>' +
           '<p class="translate-status" data-translate-status hidden></p>' +
         '</div><p class="aside-source">' + S.t('translationNote') + '</p></div>'
       : '';
@@ -75,9 +75,9 @@
         '<div class="place-hero__copy">' +
           '<a class="place-hero__back" href="' + S.url('places.html') + '">' + S.t('placeBack') + '</a>' +
           '<div class="kicker">' + S.escapeHTML(kind) + ' · ' + S.escapeHTML(region) + '</div>' +
-          '<h1>' + S.escapeHTML(title) + '</h1>' +
+          '<h1' + (S.LANG === 'be' ? '' : ' data-origin="' + S.escapeHTML(title) + '"') + '>' + S.escapeHTML(title) + '</h1>' +
           '<p class="place-hero__sub">' + S.escapeHTML(kind) + '</p>' +
-          '<div class="place-hero__meta"><span>' + S.escapeHTML(p.a || S.t('addressUnknown')) + '</span>' + (p.code ? '<span>' + S.t('code') + ': ' + S.escapeHTML(p.code) + '</span>' : '') + (p.c ? '<span>' + S.escapeHTML(p.c) + '</span>' : '') + '</div>' +
+          '<div class="place-hero__meta"><span' + (S.LANG !== 'be' && p.a ? ' data-origin="' + S.escapeHTML(p.a) + '"' : '') + '>' + S.escapeHTML(p.a || S.t('addressUnknown')) + '</span>' + (p.code ? '<span>' + S.t('code') + ': ' + S.escapeHTML(p.code) + '</span>' : '') + (p.c ? '<span' + (S.LANG === 'be' ? '' : ' data-origin="' + S.escapeHTML(p.c) + '"') + '>' + S.escapeHTML(p.c) + '</span>' : '') + '</div>' +
         '</div>' +
         '<figure class="place-hero__media">' +
           '<img src="' + hero + '" alt="' + S.escapeHTML(title) + '" data-fallback>' +
@@ -110,6 +110,7 @@
       '</div></div>' +
       (related.length ? '<section class="related"><div class="container"><h2>' + S.t('related') + '</h2><div class="related-grid">' + related.map(relatedCard).join('') + '</div></div></section>' : '');
     S.bindImages(main);
+    S.applyPageLanguage(main);
   }
   async function init(){
     const params = new URLSearchParams(location.search);

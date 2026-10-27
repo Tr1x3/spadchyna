@@ -702,29 +702,189 @@
   }
   let speakToken = 0;
   let speakBtn = null;
+  let speakAudio = null;
+  let speakSocket = null;
+  let edgeAvailable = typeof navigator !== 'undefined' && /\bEdg\//.test(navigator.userAgent);
+  const NEURAL = {
+    ru: {edge:'ru-RU-SvetlanaNeural', lang:'ru-RU', google:'ru'},
+    en: {edge:'en-US-JennyNeural', lang:'en-US', google:'en'},
+    be: {edge:'ru-RU-SvetlanaNeural', lang:'ru-RU', google:'be'}
+  };
   function stopSpeak(btn){
     speakToken++;
     if (window.speechSynthesis) speechSynthesis.cancel();
+    if (speakAudio){ speakAudio.pause(); speakAudio.src = ''; speakAudio = null; }
+    if (speakSocket){ try { speakSocket.close(); } catch (e) {} speakSocket = null; }
     if (btn) btn.classList.remove('is-speaking');
     if (speakBtn) speakBtn.classList.remove('is-speaking');
     speakBtn = null;
   }
   function pickVoice(){
     const voices = window.speechSynthesis ? speechSynthesis.getVoices() : [];
-    if (LANG === 'en') return voices.find(v => /^en/i.test(v.lang || '')) || null;
-    if (LANG === 'be') return voices.find(v => /^be/i.test(v.lang || '')) || voices.find(v => /^ru/i.test(v.lang || '')) || null;
-    return voices.find(v => /^ru/i.test(v.lang || '')) || null;
+    const wanted = LANG === 'en' ? /^en/i : /^ru|^be/i;
+    return voices
+      .filter(v => wanted.test(v.lang || ''))
+      .sort((a, b) => voiceScore(b) - voiceScore(a))[0] || null;
+  }
+  function voiceScore(voice){
+    const name = (voice.name || '').toLowerCase();
+    let score = 0;
+    if (/neural|natural|premium|google|svetlana|dmitry/.test(name)) score += 5;
+    if (voice.localService === false) score += 1;
+    return score;
+  }
+  function primeAudio(){
+    if (speakAudio) return;
+    const audio = new Audio();
+    audio.src = 'data:audio/wav;base64,UklGRiQAAABXQVZFZm10IBAAAAABAAEAQB8AAEAfAAABAAgAZGF0YQAAAAA=';
+    audio.play().catch(() => {});
+    speakAudio = audio;
+  }
+  function playUrl(url){
+    return new Promise((resolve, reject) => {
+      const audio = speakAudio || new Audio();
+      speakAudio = audio;
+      audio.onended = () => resolve();
+      audio.onerror = () => reject(new Error('audio'));
+      audio.src = url;
+      audio.play().catch(reject);
+    });
+  }
+  function xmlEscape(value){
+    return String(value || '').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
+  }
+  function edgeAudio(text, voice){
+    return new Promise((resolve, reject) => {
+      const id = (crypto.randomUUID ? crypto.randomUUID() : String(Date.now())).replace(/-/g,'');
+      const url = 'wss://speech.platform.bing.com/consumer/speech/synthesize/readaloud/edge/v1?TrustedClientToken=6A5AA1D4EAFF4E9FB37E23D68491D6F4&ConnectionId=' + id;
+      let ws;
+      const parts = [];
+      const fail = () => { clearTimeout(timer); try { ws && ws.close(); } catch (e) {} reject(new Error('edge')); };
+      const timer = setTimeout(fail, 9000);
+      try { ws = new WebSocket(url); } catch (e) { clearTimeout(timer); reject(e); return; }
+      speakSocket = ws;
+      ws.binaryType = 'arraybuffer';
+      ws.onerror = fail;
+      ws.onmessage = (event) => {
+        if (typeof event.data === 'string'){
+          if (event.data.indexOf('Path:turn.end') !== -1){
+            clearTimeout(timer);
+            try { ws.close(); } catch (e) {}
+            resolve(new Blob(parts, {type:'audio/mpeg'}));
+          }
+          return;
+        }
+        const bytes = new Uint8Array(event.data);
+        const header = (bytes[0] << 8) | bytes[1];
+        if (header > 0 && header + 2 < bytes.length) parts.push(bytes.slice(header + 2));
+      };
+      ws.onopen = () => {
+        const stamp = new Date().toISOString();
+        ws.send('X-Timestamp:' + stamp + '\r\nContent-Type:application/json; charset=utf-8\r\nPath:speech.config\r\n\r\n{"context":{"synthesis":{"audio":{"metadataoptions":{"sentenceBoundaryEnabled":false,"wordBoundaryEnabled":false},"outputFormat":"audio-24khz-48kbitrate-mono-mp3"}}}}');
+        const ssml = "<speak version='1.0' xmlns='http://www.w3.org/2001/10/synthesis' xml:lang='" + voice.lang + "'><voice name='" + voice.edge + "'><prosody rate='-6%'>" + xmlEscape(text) + "</prosody></voice></speak>";
+        ws.send('X-RequestId:' + id + '\r\nContent-Type:application/ssml+xml\r\nX-Timestamp:' + stamp + '\r\nPath:ssml\r\n\r\n' + ssml);
+      };
+    });
+  }
+  function speakSystem(text){
+    return new Promise((resolve, reject) => {
+      if (!window.speechSynthesis){ reject(new Error('speech')); return; }
+      const utterance = new SpeechSynthesisUtterance(text);
+      const voice = pickVoice();
+      if (voice){ utterance.voice = voice; utterance.lang = voice.lang; }
+      else utterance.lang = LANG === 'en' ? 'en-US' : 'ru-RU';
+      utterance.rate = 0.94;
+      utterance.onend = () => resolve();
+      utterance.onerror = () => reject(new Error('speech'));
+      speechSynthesis.speak(utterance);
+    });
+  }
+  let googleAvailable = true;
+  async function ensureVoices(){
+    if (!window.speechSynthesis) return [];
+    const ready = speechSynthesis.getVoices();
+    if (ready.length) return ready;
+    return new Promise(resolve => {
+      const finish = () => { speechSynthesis.removeEventListener('voiceschanged', finish); resolve(speechSynthesis.getVoices()); };
+      speechSynthesis.addEventListener('voiceschanged', finish);
+      setTimeout(finish, 600);
+    });
+  }
+  async function speakGoogle(text, lang){
+    for (const chunk of splitChunks(text, 180)){
+      await playUrl('https://translate.google.com/translate_tts?ie=UTF-8&client=tw-ob&tl=' + lang + '&q=' + encodeURIComponent(chunk));
+    }
   }
   async function speakText(btn, text){
-    if (!window.speechSynthesis){ toast(t('listenFail')); return; }
-    const u = new SpeechSynthesisUtterance(text);
-    const voice = pickVoice();
-    if (voice){ u.voice = voice; u.lang = voice.lang; }
-    else u.lang = LANG === 'en' ? 'en-US' : 'ru-RU';
-    u.onend = u.onerror = () => { if (speakBtn === btn){ btn.classList.remove('is-speaking'); speakBtn = null; } };
-    speakBtn = btn;
+    const voice = NEURAL[LANG] || NEURAL.ru;
+    const token = speakToken;
     btn.classList.add('is-speaking');
-    speechSynthesis.speak(u);
+    speakBtn = btn;
+    await ensureVoices();
+    if (token !== speakToken) return;
+    const natural = pickVoice();
+    if (natural && voiceScore(natural) >= 5){
+      await speakSystem(text);
+      if (speakBtn === btn){ btn.classList.remove('is-speaking'); speakBtn = null; }
+      return;
+    }
+    const chunks = splitChunks(text, 700);
+    for (const chunk of chunks){
+      if (token !== speakToken) return;
+      if (edgeAvailable){
+        try {
+          const blob = await edgeAudio(chunk, voice);
+          if (token !== speakToken) return;
+          if (blob && blob.size > 200){
+            const url = URL.createObjectURL(blob);
+            try { await playUrl(url); } finally { URL.revokeObjectURL(url); }
+            continue;
+          }
+        } catch (e) {
+          edgeAvailable = false;
+        }
+      }
+      if (token !== speakToken) return;
+      if (googleAvailable){
+        try { await speakGoogle(chunk, voice.google); continue; }
+        catch (e) { googleAvailable = false; }
+      }
+      await speakSystem(chunk);
+    }
+    if (speakBtn === btn){ btn.classList.remove('is-speaking'); speakBtn = null; }
+  }
+  async function applyPageLanguage(root){
+    if (!root || LANG === 'be') return;
+    const nodes = [...root.querySelectorAll('[data-origin]')].filter(node => !node.dataset.translatedText);
+    if (!nodes.length) return;
+    const tl = LANG === 'en' ? 'en' : 'ru';
+    const unique = [...new Set(nodes.map(node => node.dataset.origin).filter(Boolean))];
+    const done = new Map();
+    let cursor = 0;
+    async function worker(){
+      while (cursor < unique.length){
+        const source = unique[cursor++];
+        try { done.set(source, await translateBe(source, tl)); }
+        catch (e) { done.set(source, ''); }
+      }
+    }
+    await Promise.all([worker(), worker(), worker()]);
+    nodes.forEach(node => {
+      const value = done.get(node.dataset.origin);
+      if (!value) return;
+      node.dataset.translatedText = value;
+      node.textContent = value;
+    });
+    const heading = root.querySelector('h1[data-origin]');
+    const lead = root.querySelector('.article-lead');
+    if (heading && heading.dataset.translatedText){
+      document.title = heading.dataset.translatedText + ' — Спадчына';
+      if (lead && heading.dataset.origin) lead.textContent = lead.textContent.split(heading.dataset.origin).join(heading.dataset.translatedText);
+    }
+    root.querySelectorAll('[data-translate]').forEach(btn => {
+      btn.dataset.translated = '1';
+      btn.textContent = t('showOriginal');
+    });
   }
   async function gatherSpeakText(btn){
     const preset = btn.getAttribute('data-speak-text');
@@ -758,6 +918,7 @@
       e.preventDefault();
       if (speakBtn === btn){ stopSpeak(btn); return; }
       stopSpeak(null);
+      primeAudio();
       const token = ++speakToken;
       btn.classList.add('is-speaking');
       speakBtn = btn;
@@ -770,6 +931,7 @@
         if (token !== speakToken) return;
         await speakText(btn, text);
       } catch (err) {
+        if (token !== speakToken) return;
         btn.classList.remove('is-speaking');
         if (speakBtn === btn) speakBtn = null;
         toast(t('translateFail'));
@@ -832,8 +994,8 @@
       (o.image ? '<img class="map-popup__image" src="' + o.image + '" alt="" loading="lazy" data-fallback>' : '') +
       '<div class="map-popup__body">' +
         (o.meta ? '<div class="map-popup__meta">' + escapeHTML(o.meta) + '</div>' : '') +
-        '<h3>' + escapeHTML(o.title || '') + '</h3>' +
-        (o.text ? '<p>' + escapeHTML(o.text) + '</p>' : '') +
+        '<h3>' + (o.speakFrom && LANG !== 'be' ? '<span data-origin="' + escapeHTML(o.title || '') + '">' + escapeHTML(o.title || '') + '</span>' : escapeHTML(o.title || '')) + '</h3>' +
+        (o.text ? '<p>' + (o.speakFrom && LANG !== 'be' ? '<span data-origin="' + escapeHTML(o.text) + '">' + escapeHTML(o.text) + '</span>' : escapeHTML(o.text)) + '</p>' : '') +
         '<div class="map-popup__actions">' +
           (o.href ? '<a class="map-popup__link" href="' + o.href + '">' + t('more') + '</a>' : '') +
           '<button class="btn btn--ghost btn--small" type="button" data-speak' + from + ' data-speak-text="' + escapeHTML(o.listenText || o.title || '') + '">' + t('listen') + '</button>' +
@@ -859,6 +1021,6 @@
     isCurated, curatedSlug, placeUrl, imageUrl, bindImage, bindImages,
     routeItems, addRoute, removeRoute, moveRoute, clearRoute, routeCount, routeDistance, formatDistance, routeLinks,
     toast, initBaseMap, initMapTools, initReveal, haversine,
-    eraBucketOf, eraLabel, translateBe, pointPopup, addCountryOutline
+    eraBucketOf, eraLabel, translateBe, applyPageLanguage, pointPopup, addCountryOutline
   };
 })();

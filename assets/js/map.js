@@ -55,7 +55,7 @@
     });
     const marker = L.marker([p.lat,p.lon], {icon, title:pointTitle(p), riseOnHover:true});
     marker.bindPopup(popupHtml(p), {maxWidth:310, minWidth:280, closeButton:true, autoPanPadding:[30,30]});
-    marker.on('popupopen', e => { S.bindImages(e.popup.getElement()); });
+    marker.on('popupopen', e => { S.bindImages(e.popup.getElement()); S.applyPageLanguage(e.popup.getElement()); });
     marker._point = p;
     return marker;
   }
